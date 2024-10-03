@@ -1,0 +1,943 @@
+{
+  "questions": [
+    {
+      "id": "1-1",
+      "question_text": "치과 간판을 통해 유추할 수 있는 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["출신학교", "주요 진료과목", "종교", "개원일"],
+      "correct_answers": [0, 1, 2]
+    },
+    {
+      "id": "1-2",
+      "question_text": "치과 접수 데스크에서의 업무를 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["임플란트 수술", "환자 일정 예약", "진료비 정산", "방사선 촬영"],
+      "correct_answers": [1, 2]
+    },
+    {
+      "id": "1-3",
+      "question_text": "치과 대기실에서 의료진에 대해 얻을 수 있는 정보를 두 가지 이상 쓰시오.",
+      "answer_type": "short",
+      "correct_answers": ["전공", "출신교", "학회"]
+    },
+    {
+      "id": "1-4",
+      "question_text": "다음 설명으로 맞는 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": [
+        "진료실에서는 진료비 수납이 이루어 진다.",
+        "대기실에는 환자를 유인할 수 있는 학력/자격증/협회 내용을 소개할 수 없다.",
+        "구강방사선 촬영실에서는 방사선 사진 촬영을 한다.",
+        "방사선 촬영실 벽은 납벽으로 만들어져 있다."
+      ],
+      "correct_answers": [2, 3]
+    },
+    {
+      "id": "1-5",
+      "question_text": "아래 설명이 나타내는 장소를 고르시오.",
+      "question_info": [
+        "오염된 기구를 세척하고 멸균하여 사용 전 까지 보관하는 장소",
+        "오염된 구역과 멸균된 구역으로 나누며 항상 청결하게 관리되어야 한다"
+      ],
+      "answer_type": "single_choice",
+      "options": ["촬영실", "진료실", "수술실", "소독실"],
+      "correct_answers": [3]
+    },
+    {
+      "id": "1-6",
+      "question_text": "치과 기공실에 대한 설명으로 맞는 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": [
+        "기공실은 진료활동에 편리하도록 유니트 체어가 필요하다.",
+        "기공실은 치과에 들어오는 손님에게 첫 이미지가 된다.",
+        "연구모형, 진단모형, 개인트레이 등의 제작이 이루어진다.",
+        "감염 방지에 주의를 기울여야 한다."
+      ],
+      "correct_answers": [2, 3]
+    },
+    {
+      "id": "1-7",
+      "question_text": "수술실과 회복실에 대한 설명으로 맞는 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": [
+        "수술실에서 임플란트 수술을 한다.",
+        "감염 방지에 주의를 기울여야 한다.",
+        "수술실에서 환자가 회복될 때까지 대기한다.",
+        "회복실은 임플란트 수술 후 환자가 회복하는 공간이다."
+      ],
+      "correct_answers": [0, 1, 3]
+    },
+    {
+      "id": "1-8",
+      "question_text": "치과 진료에 사용되는 다양한 장비를 구동시키기 위해 컴프레서, 석션 모터를 갖춰둔 공간은 어디인가요?",
+      "answer_type": "short",
+      "correct_answers": ["기계실"]
+    },
+    {
+      "id": "1-9~14",
+      "question_text": "치과 진료 과목과 알맞은 설명을 연결하시오.",
+      "answer_type": "single_choice",
+      "options": ["그대로 외우십시오"],
+      "correct_answers": [0],
+      "image": "/static/images/1-9.jpg"
+    },
+    {
+      "id": "1-15",
+      "question_text": "아래 설명이 나타내는 진료 과목을 쓰시오.",
+      "question_info": [
+        "손상되고 상실된 치아와 그 주변 조직을 인공적인 보철물로 대체하여 저작, 발음, 심미성 등 각종 구강기능을 회복하는 진료를 담당한다."
+      ],
+      "answer_type": "short",
+      "correct_answers": ["치과보철과"]
+    },
+    {
+      "id": "1-16",
+      "question_text": "다음 교정 치료 종류를 쓰시오.",
+      "answer_type": "short",
+      "correct_answers": ["투명교정"], 
+      "image": "/static/images/1-16.jpg"
+    },
+    {
+      "id": "1-17",
+      "question_text": "소아치과 과목에 대한 설명으로 맞는 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": [
+        "소아, 청소년, 장애아동을 대상으로 치료한다.",
+        "치과 질환 전반의 예방, 치아 우식증, 치아 발육 장애 등을 치료한다.",
+        "소아치과에서는 교정치료는 하지 않는다.",
+        "악안면 성장과 발육을 치료한다."
+      ],
+      "correct_answers": [0, 1, 3]
+    },
+    {
+      "id": "1-18",
+      "question_text": "치과 진료과 중 임플란트 시술과 관련이 가장 높은 진료과를 3가지 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["예방치과","치과보철과", "구강악 안면외과", "치주과"],
+      "correct_answers": [1, 2, 3]
+    },
+    {
+      "id": "2-1",
+      "question_text": "다음 설명 중 맞는 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["치과의사가 되기 위해서는 반드시 치과대학을 졸업해야 한다.","치과의사는 치과의사 국가시험에 합격하여 면허를 취득해야 한다.", "전문 치과의사는 특정 분야의 진료 기술을 더 수련한 후 전문 치과 진료 분야에 종사한다.", "치과 전문의가 되기 위해서는 인턴과 레지던트 과정을 수료해야 하고 전문의 자격시험에 합격해야 한다."],
+      "correct_answers": [1, 2, 3]
+    },
+    {
+      "id": "2-2",
+      "question_text": "다음 설명 중 맞는 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["치과 위생사는 의료 기사로써 국가시험에 합격하여 면허를 취득해야 한다.","치과 기공사는 작업모혀, 보철물, 임플란트 맞춤 지대주 등을 제작 및 수리, 가공한다.", "간호조무사는 치과진료에 필요한 재료를 준비, 기구세척 등을 담당하며 직접 시술을 할 수 있다.", "치과 병, 의원에는 별도로 사무 행정 직원인, 코디네이터 등의 인력도 있다."],
+      "correct_answers": [0, 2, 3]
+    },
+    {
+      "id": "2-3",
+      "question_text": "치과 진료팀 중 치과위생사와 조무사의 차이점 중 진료의 영역에 관련하여 서술하시오.",
+      "answer_type": "short",
+      "correct_answers": ["‘치과위생사’는 치과의사의 지도하에 시술영역을 일부 담당하거나, ‘간호조무사’는 치과의사 또는 치과위생사의 보조업무를 담당하고, 치과진료에 필요한 재료의 준비, 기구세척, 환자접수 등을 담당하는 비시술 구강보건인력임"]
+    },
+    {
+      "id": "2-4",
+      "question_text": "국내 치과대학(총 11개)을 모두 나열하시오. (10개 이상 기재시 정답)",
+      "answer_type": "short",
+      "correct_answers": ["서울, 경희, 연세, 조선, 경북, 부산, 전남, 전북, 원광, 단국, 강릉원주"]
+    },
+    {
+      "id": "2-5",
+      "question_text": "보건소에서 근무하는 치과의사를 뜻하는 단어를 고르시오.",
+      "answer_type": "single_choice",
+      "options": ["군의관","공보의", "기공사", "원장"],
+      "correct_answers": [1]
+    },
+    {
+      "id": "2-6",
+      "question_text": "치과 병원의 특징으로 맞는 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["다양한 장비와 수술실, 입원실을 갖추고 있다.","한 과목만 집중 진료 한다.", "법으로 정해진 일정 수 이상의 진료과목을 개설해야 한다.", "전국에 약 10,000 곳의 치과 병원이 있다."],
+      "correct_answers": [0,2]
+    },
+    {
+      "id": "2-7",
+      "question_text": "다음 설명이 맞는 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["치과대학 병원의 수련의를 인턴이라 부른다.","종합병원의 치과에는 환자가 입원할 수 없다.", "치과 의원에서는 일반적인 구강영역의 치과 치료가 수행된다.", "국군 병원에서는 군대에서 발생한 환자를 치료한다."],
+      "correct_answers": [0,2,3]
+    },
+    {
+      "id": "2-8",
+      "question_text": "아래 사진의 장비 이름을 쓰시오. (구강전체 2D 촬영기)",
+      "answer_type": "short",
+      "correct_answers": ["파노라마 촬영기"],
+      "image": "/static/images/2-8.jpg"
+    },
+    {
+      "id": "2-9",
+      "question_text": "아래 사진의 장비 이름을 쓰시오. (3차원 영상 구현 진단장비)",
+      "answer_type": "short",
+      "correct_answers": ["Dental CT"],
+      "image": "/static/images/2-9.png"
+    },
+    {
+      "id": "2-10",
+      "question_text": "치과 진단용 장비를 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["파노라마 촬영기", "Standard X-ray 촬영기", "핸드피스", "치아 우식 진단기"],
+      "correct_answers": [0, 1, 3]
+    },
+    {
+      "id": "2-11",
+      "question_text": "아래 사진의 장비 이름을 쓰시오.",
+      "answer_type": "short",
+      "correct_answers": ["유니트체어"],
+      "image": "/static/images/2-11.jpg"
+    },
+    {
+      "id": "2-12",
+      "question_text": "치아 삭제, 절단, 연마 등의 진료 또는 치과 기공물의 가공에 사용되는 장비의 이름을 쓰시오.",
+      "answer_type": "short",
+      "correct_answers": ["핸드피스"]
+    },
+    {
+      "id": "2-13~17",
+      "question_text": "장비와 맞는 설명을 연결하시오.",
+      "answer_type": "single_choice",
+      "options": ["그대로 외우십시오"],
+      "correct_answers": [0],
+      "image": "/static/images/2-13.jpg"
+    },
+    {
+      "id": "2-18~20",
+      "question_text": "장비와 맞는 그림을 연결하시오.",
+      "answer_type": "single_choice",
+      "options": ["그대로 외우십시오"],
+      "correct_answers": [0],
+      "image": "/static/images/2-18.jpg"
+    },
+    {
+      "id": "3-1, 2",
+      "question_text": "다음 그림에 표시된 곳의 명칭을 쓰시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["이공", "하치조신경"],
+      "image": "/static/images/3-1.png"
+    },
+    {
+      "id": "3-3",
+      "question_text": "다음은 상악에서 주의해야 할 해부학적 구조에 대한 설명이다. 아래의 설명에 맞는 정답을 쓰시오.",
+      "question_info": [
+        "상악 내부에 존재하는 사각 피라미드 모양의 비어있는 공간", "좌우 한개씩 존재하며 개인에 따라 크기와 모양이 다름"],
+      "answer_type": "short",
+      "correct_answers": ["상악동"]
+    },
+    {
+      "id": "3-4, 5",
+      "question_text": "다음 그림에 표시된 곳의 명칭을 쓰시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["치관", "치근"],
+      "image": "/static/images/3-4.png"
+    },
+    {
+      "id": "3-6~12",
+      "question_text": "다음 그림에 표시된 곳의 명칭을 쓰시오.",
+      "question_info": [
+        "① Pulp 치수   ② Enamel 법랑질   ③ Gingiva 치은, 잇몸", "④ Aleolar bone 치조골   ⑤ Denin 상아질", "⑥ Periodontal membrane 치근막(Periodontal ligament 치주인대)","⑦ Cementum 백악질"],
+      "answer_type": "multiple_short",
+      "correct_answers": ["2", "5", "1", "3", "7", "6", "4"],
+      "image": "/static/images/3-6.png"
+    },
+    {
+      "id": "3-13",
+      "question_text": "다음은 치조골을 구성에 대한 설명이다. 빈칸에 알맞은 bone을 쓰시오.",
+      "question_info": [
+        "치조골은 ( ① ) 이 ( ② ) 를 감싸는 구조"],
+      "answer_type": "multiple_short",
+      "correct_answers": ["피질골", "해면골"]
+    },
+    {
+      "id": "3-14",
+      "question_text": "Normal bone 골질에 대한 설명을 쓰시오.",
+      "answer_type": "short",
+      "correct_answers": ["골질의 분류 중, 중간 밀도의 골이며 적당한 두께의 피질골과 거친 해면골로 구성"]
+    },
+    {
+      "id": "3-15",
+      "question_text": "Hard bone 골질에 대한 설명을 쓰시오.",
+      "answer_type": "short",
+      "correct_answers": ["골질의 분류 중, 매우 치밀한 골이며 두꺼운 피질골과 얇고 밀집된 해면골로 구성 \nShort 임플란트 식립가능 "]
+    },
+    {
+      "id": "3-16",
+      "question_text": "Soft bone 골질에 대한 설명을 쓰시오.",
+      "answer_type": "short",
+      "correct_answers": ["골질의 분류 중, 매우 무른 골이며 피질골이 매우 얇거나 거의 없으며 골밀도가 매우 낮아 초기 고정이 불량"]
+    },
+    {
+      "id": "3-17",
+      "question_text": "유치는 상하악 총 몇개로 구성되어 있는지 쓰시오.",
+      "answer_type": "short",
+      "correct_answers": ["20"]
+    },
+    {
+      "id": "3-18",
+      "question_text": "영구치는 상하악 총 몇개로 구성되어 있는지 쓰시오.",
+      "answer_type": "short",
+      "correct_answers": ["32"]
+    },
+    {
+      "id": "3-19~25",
+      "question_text": "빈칸의 영구치의 명칭을 쓰시오.\n(예시 사진에 제3대구치가 빠져있음 ㅠㅠ)",
+      "answer_type": "multiple_short",
+      "correct_answers": ["중절치", "측절치", "견치", "제1소구치", "제2소구치", "제1대구치", "제2대구치", "제3대구치"],
+      "image": "/static/images/3-19.jpg"
+    },
+    {
+      "id": "3-26, 27",
+      "question_text": "각 부분에 해당되는 기준선의 명칭을 쓰시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["정중선", "교합선"],
+      "image": "/static/images/3-26.png"
+    },
+    {
+      "id": "3-28~31",
+      "question_text": "표시된 부분에 해당되는 치아면을 쓰시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["근심면", "원심면", "순면", "설면"],
+      "image": "/static/images/3-28.png"
+    },
+    {
+      "id": "3-32~35",
+      "question_text": "표시된 부분에 해당되는 치아면을 쓰시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["구개면", "치경부", "절단연", "교합면"],
+      "image": "/static/images/3-32.png"
+    },
+    {
+      "id": "3-36~41",
+      "question_text": "다음에 해당되는 치아 번호 혹은 명칭을 쓰시오.",
+      "question_info": [
+        "36) 하악 우측 제1소구치 ( ① )", "37) 하악 좌측 견치 ( ② )","38) 상악 좌측 제1대구치 ( ③ )", "39) #11 ( ④ )","40) #22 ( ⑤ )","41) #35 ( ⑥ )"],
+      "answer_type": "multiple_short",
+      "correct_answers": ["#44", "#33", "#26", "상악 우측 중절치", "상악 좌측 측절치", "하악 좌측 제2소구치"]
+    },
+    {
+      "id": "4-1",
+      "question_text": "다음 중, 인체 내의 결손 부위를 보완하기 위해 인체 내에 삽입하는 인공의 보형물은 무엇입니까?",
+      "answer_type": "single_choice",
+      "options": ["지대주 나사(Abutment Screw)", "크라운(Crown)", "지대주(Abutment)", "드릴(Drill)", "임플란트(Implant)"],
+      "correct_answers": [4]
+    },
+    {
+      "id": "4-2",
+      "question_text": "치과용 임플란트를 식립하기 전에, 치조골에 홀을 형성하는 제품은 무엇입니까?",
+      "answer_type": "single_choice",
+      "options": ["크라운(Crown)", "지대주 나사(Abutment Screw)", "지대주(Abutment)", "드릴(Drill)", "임플란트(Implant)"],
+      "correct_answers": [3]
+    },
+    {
+      "id": "4-3~6",
+      "question_text": "다음 그림에 해당하는 치과용 임플란트 구성요소 명칭과 영문명을 연결하시오.",
+      "answer_type": "single_choice",
+      "options": ["그대로 외우십시오"],
+      "correct_answers": [0],
+      "image": "/static/images/4-3.jpg"
+    },
+    {
+      "id": "4-7",
+      "question_text": "다음 중 브릿지 치료 방법의 특징으로 옳은 것을 모두 고르시오.",
+      "answer_type": "multiple_short",
+      "options": ["치아를 삭제하지 않는다.", "치아가 상실된 부위에만 시술한다.", "인접치아를 삭제한다.", "염증이 생길 우려가 있다."],
+      "correct_answers": [2, 3]
+    },
+    {
+      "id": "4-8",
+      "question_text": "다음 중 부분틀니 치료 방법의 특징으로 옳은 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["지대치에 무리를 준다.", "치아가 상실된 부위에만 시술한다.", "인접치아를 삭제한다.", "염증이 생길 우려가 없다."],
+      "correct_answers": [0, 2]
+    },
+    {
+      "id": "4-9",
+      "question_text": "다음 중 완전틀니 치료 방법의 단점으로 옳은 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["치조골 흡수", "틀니 탈락", "치근 재생", "안모 변형"],
+      "correct_answers": [0, 2, 3]
+    },
+    {
+      "id": "4-10~12",
+      "question_text": "다음 중 임플란트와 브릿지를 비교한 표이다. 빈 칸을 채우시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["빠진 부위의 뼈 안에 삽입", "잇몸 뼈가 점직적으로 흡수됨", "자연 치아와 같은 저작력(80~90%)"],
+      "image": "/static/images/4-10.png"
+    },
+    {
+      "id": "4-13~15",
+      "question_text": "다음 빈 칸에 알맞은 과정을 작성하세요..",
+      "answer_type": "multiple_short",
+      "correct_answers": ["치료계획 수립", "수술 전 치료 및 처치", "보철 치료"],
+      "image": "/static/images/4-13.png"
+    },
+    {
+      "id": "4-16",
+      "question_text": "임플란트 수술 전 치료를 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["골이식", "충치 치료", "치주치료", "보철 로딩"],
+      "correct_answers": [0, 1, 2]
+    },
+    {
+      "id": "4-17",
+      "question_text": "임플란트 보철 치료의 첫 과정이자, 구강과 동일한 모형을 제작하는 단계는?",
+      "answer_type": "single_choice",
+      "options": ["인상(Impression) 채득 및 구강모형 제작", "Casting", "Firing", "Wax up"],
+      "correct_answers": [0]
+    },
+    {
+      "id": "4-18",
+      "question_text": "임플란트 시술 후 환자 주의사항으로 맞는 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["수술 다음 날 부터 음주는 가능하다.", "붓기 제거를 위해 사우나를 하는 것이 좋다.", "침이나 피는 뱉지 말고 삼켜야 한다.", "한동안 빨대를 사용하면 안 된다."],
+      "correct_answers": [2, 3]
+    },
+    {
+      "id": "4-19",
+      "question_text": "임플란트 수술방식은 (   ) 을 절개하는 횟수에 따라 1회법 수술과 2회법 수술로 나뉜다.",
+      "answer_type": "short",
+      "correct_answers": ["치은"]
+    },
+    {
+      "id": "4-20",
+      "question_text": "빈 칸에 알맞은 말이 순서대로 써있는 것을 고르시오.",
+      "answer_type": "single_choice",
+      "options": ["Cover Screw - Healing Abutment - Healing Abutment", "Healing Abutment - Healing Abutment - Cover Screw", "Cover Screw - Cover Screw - Healing Abutment", "Cover Screw - Cover Screw - Cover Screw"],
+      "correct_answers": [2],
+      "image": "/static/images/4-20.png"
+    },
+    {
+      "id": "4-21",
+      "question_text": "Implant가 뼈에 붙는 동안 Implant를 덮어 내부로 연조직 및 치조골이 성장하여 들어가는 것을 방지하는 것은?",
+      "answer_type": "short",
+      "correct_answers": ["Cover Screw"]
+    },
+    {
+      "id": "4-22",
+      "question_text": "빈 칸에 알맞은 제품을 고르시오.",
+      "answer_type": "single_choice",
+      "options": ["Cover Screw","Implant","Crown", "Healing Abutment"],
+      "correct_answers": [3],
+      "image": "/static/images/4-22.png"
+    },
+    {
+      "id": "4-23",
+      "question_text": "빈 칸에 알맞은 제품에 대한 설명으로 옳은 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["빈 칸에 들어가는 제품은 Healing Abutment이다.", "빈 칸에 들어가는 제품은 Cover Screw이다.", "치은조식의 개방을 유지한다.", "체결 후 2차 수술이 필요하다."],
+      "correct_answers": [0,2],
+      "image": "/static/images/4-22.png"
+    },
+    {
+      "id": "4-24",
+      "question_text": "2회법 수술에 대한 설명으로 맞는 것을 모두 고르시오",
+      "answer_type": "multiple_choice",
+      "options": ["안정적인 초기 고정력을 얻는 데에 좋은 수술법이다.", "골질이 좋지 않은 경우 2회법 수술을 하는 것이 좋다.", "치료기간이 짧아 환자에게 편리하다.", "치유기간 도중의 감염 위험성이 감소한다."],
+      "correct_answers": [0,1, 3]
+    },
+    {
+      "id": "4-25",
+      "question_text": "1회법 수술에 대한 설명으로 맞는 것을 모두 고르시오",
+      "answer_type": "multiple_choice",
+      "options": ["보철물 장착까지의 기간이 단축된다.", "초기 안정성 확보에 좋다.", "Implant 예후 인지가 용이하다.", "연조직 손상을 최소화 할 수 있다."],
+      "correct_answers": [0,2,3]
+    },
+    {
+      "id": "4-26",
+      "question_text": "1회법 수술과 2회법 수술의 차이점으로 맞는 것을 모두 고르시오",
+      "answer_type": "multiple_choice",
+      "options": ["1회법 수술은 치은을 1번 절개하고, 2회법 수술은 2번 절개한다.", "2회법 수술은 1회법 수술보다 치료 기간이 짧다.", "1회법 수술은 2회법 수술보다 연조직 손상을 줄일 수 있다.", "안정적인 Bone Healing 시간을 가져야할 때는 2회법 보다 1회법 수술이 적합하다."],
+      "correct_answers": [0,2]
+    },
+    {
+      "id": "4-27",
+      "question_text": "1회법 수술만 가능한 임플란트 시스템을 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["US System", "TS System", "SS System", "MS System"],
+      "correct_answers": [2,3]
+    },
+    {
+      "id": "4-28",
+      "question_text": "1회법, 2회법 수술이 모두 가능한 임플란트 시스템을 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["US System", "TS System", "SS System", "MS System"],
+      "correct_answers": [0, 1]
+    },
+    {
+      "id": "4-29",
+      "question_text": "빈 칸에 알맞은 단어를 쓰시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["골내 임플란트", "나사형", "티타늄"],
+      "image": "/static/images/4-29.png"
+    },
+    {
+      "id": "4-30",
+      "question_text": "다음 중 맞는 설명을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["골유착 임플란트 개념은 중세시대부터 존재했다.", "Branemark 교수가 골유착의 개념을 정립했다.", "골유착은 임플란트 표면에 Bone이 직접 부착되어 결합하는 것이다.", "골유착은 Bone과 연조직이 임플란트 표면에 결합하는 것이다."],
+      "correct_answers": [1,2]
+    },
+    {
+      "id": "5-1",
+      "question_text": "다음은 표면처리 정의에 대한 설명이다. 빈 칸에 알맞은 단어를 쓰시오.",
+      "question_info": [
+        "소재 전체가 아닌 눈으로 보이는 ( ① ) 만을 변화시켜 \n원소재의 기계적 ( ② ) 또는  ( ③ ) 을 향상 시키거나 \n원소재가 가지고 있지 않는 ( ④ ) 을 부여하는 기술"],
+      "answer_type": "multiple_short",
+      "correct_answers": ["표면", "강도", "내식성", "특별한 기능"]
+    },
+    {
+      "id": "5-2",
+      "question_text": "표면 처리가 중요한 가장 큰 이유는 무엇인가?",
+      "answer_type": "single_choice",
+      "options": ["경쟁사가 모방하기 힘든 제품의 품질 경쟁력이기 때문","제품의 기계적 강도를 보강하기 위해", "임플란트 교체시기를 앞당겨 회사 매출을 극대화 시키기 위해","생산 단계를 복잡하게 만들어 제조원가를 올리기 위해"],
+      "correct_answers": [0]
+    },
+    {
+      "id": "5-3",
+      "question_text": "다음 중 표면처리를 적용한 사례를 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["면도날 표면처리", "스마트폰 액정 보호필름의 표면처리", "자동차용 부품 표면처리", "생체 재료 표면 처리"],
+      "correct_answers": [0,1,2,3]
+    },
+    {
+      "id": "5-4",
+      "question_text": "표면 처리가 중요한 가장 큰 이유는 무엇인가?",
+      "question_info": ["ㄱ. 표면 거칠기 부여를 통한 밀착력 증대", "ㄴ. 특정 성분만 붙게 하기 위한 선택 반응 유도", "ㄷ. 표면에 물질이 달라붙지 않도록 이형성 부여", "ㄹ. 경도 및 내마모성 등 기계적 강도 향상", "ㄹ. 부식을 예방하기 위한 내부식성 향상"],
+      "answer_type": "single_choice",
+      "options": ["1개","2개","3개","4개","5개" ],
+      "correct_answers": [4]
+    },
+    {
+      "id": "5-5",
+      "question_text": "골유착은 임플란트 표면에 연조직이 붙지 않고 새로운 뼈가 단단한 고정을 하는 것을 의미한다. \n이런 골유착을 의미하는 영문 단어를 쓰시오. (뼈+통합의 합성어)",
+      "answer_type": "short",
+      "correct_answers": ["Osseointegration"]
+    },
+    {
+      "id": "5-6",
+      "question_text": "다음 보기에서 골유착 과정에 해당되지 않는 내용은 무엇입니까?",
+      "answer_type": "single_choice",
+      "options": ["기계적 안정성과 생물학적 안정성에 의해 임플란트의 최종 고정력을 확보한다.","임플란트 고정력이 제일 감소하는 시기 전에 보철을 해야 장기적으로 유지한다.","1차 고정력은 식립 직후부터 골개조 과정에서 점진적으로 감소한다.","치유 과정에서 새로운 뼈가 생성되어 2차 고정력은 점진적으로 상승한다." ],
+      "correct_answers": [1]
+    },
+    {
+      "id": "5-7",
+      "question_text": "임플란트 초기 식립 후 뼈와 접촉하여 얻는 기계적 고정력은 무엇인가?",
+      "answer_type": "single_choice",
+      "options": ["1차 고정력","2차 고정력","임플란트 고정력","임플란트 Drip" ],
+      "correct_answers": [0]
+    },
+    {
+      "id": "5-8",
+      "question_text": "임플란트 식립 후 치유 과정에서 임플란트 표면에 새로운 뼈가 생성되면서 얻는 생물학적 고정력은 무엇인가?",
+      "answer_type": "single_choice",
+      "options": ["1차 고정력","2차 고정력","임플란트 고정력","임플란트 Drip" ],
+      "correct_answers": [1]
+    },
+    {
+      "id": "5-9",
+      "question_text": "임플란트 식립 초기 얻는 기계적 고정력과 치유 과정에서 얻는 생물학적 고정력을 합친 고정력을 무엇이라고 하는가?",
+      "answer_type": "single_choice",
+      "options": ["1차 고정력","2차 고정력","임플란트 고정력","임플란트 Drip" ],
+      "correct_answers": [2]
+    },
+    {
+      "id": "5-10",
+      "question_text": "임플란트 골유착 과정에서 임플란트 고정력이 제일 감소하는 시기는 무엇인가?",
+      "answer_type": "single_choice",
+      "options": ["1차 고정력","2차 고정력","임플란트 고정력","임플란트 Drip" ],
+      "correct_answers": [3]
+    },
+    {
+      "id": "5-11",
+      "question_text": "다음 빈 칸에 알맞은 단어와 영문을 기입하시오.",
+      "question_info": [
+        "임플란트 표면처리는 기계 가공된 임플란트 표면을 물리, 화학, 생물학적 방법을 통해 (  ) 이 잘 될 수 있도록 변화시키는 기술이다. 이는 연조직이 붙지 않고 새로운 뼈가 단단한 고정을 하여, 임플란트가 충분한 하중을 견딜 수 있도록 한다."],
+      "answer_type": "multiple_short",
+      "correct_answers": ["골유착", "Osseointegration"]
+    },
+    {
+      "id": "5-12, 13",
+      "question_text": "다음 그래프에 알맞은 명칭을 기입하시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["2차 고정력", "1차 고정력"],
+      "image": "/static/images/5-12.png"
+    },
+    {
+      "id": "5-14",
+      "question_text": "다음 빈 칸에 알맞은 말을 기입하시오.",
+      "question_info": [
+        "임플란트 표면처리의 목적은 ( ① ) 증대와 ( ② ) 의 단축이다."],
+      "answer_type": "multiple_short",
+      "correct_answers": ["성공률", "치료기간"]
+    },
+    {
+      "id": "5-15",
+      "question_text": "임플란트 표면처리의 목적 3가지를 적으시오",
+      "answer_type": "multiple_short",
+      "correct_answers": ["임플란트 고정력 증대", "임플란트 보철 loading 시기 단축", "임플란트 한계 극복"]
+    },
+    {
+      "id": "5-16~18",
+      "question_text": "다음 빈 칸에 알맞은 명칭을 기입하시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["표면력 증대", "화학적 특성 변화", "생물학적 특성 부여"],
+      "image": "/static/images/5-16.png"
+    },
+    {
+      "id": "5-19",
+      "question_text": "1세대 표면에 대한 설명으로 옳은 것을 모두 고르시오. (2개)",
+      "answer_type": "multiple_choice",
+      "options": ["Machined 상태의 Smooth Surface 이다.","단순한 기계 가공 표면이다.","임플란트 성공율이 99% 이상이다.","길이 10mm 이하, 상악에 식립시 100% 성공하였다." ],
+      "correct_answers": [0,1]
+    },
+    {
+      "id": "5-20",
+      "question_text": "2세대 표면에 대한 설명으로 옳은 것을 모두 고르시오. (2개)",
+      "answer_type": "multiple_choice",
+      "options": ["Machined 상태의 Smooth Surface 이다.","국내 임플란트 제조사 대부분이 SLA 표면을 적용하고 있다.","대표적으로 TPS 표면과 블라스팅 표면이 있다.","화학적 특성을 부여한 표면이다." ],
+      "correct_answers": [1,2]
+    },
+    {
+      "id": "5-21",
+      "question_text": "2세대 표면의 종류와 영문이 알맞게 짝지어진 것을 모두 고르시오. (3개)",
+      "answer_type": "multiple_choice",
+      "options": ["TPS - Titanium Plasma Spray","RBM - Resorbable Blast Media","CA - Calcium SA","SLA - Sandblasted with Large grit and Acid Etched", "HA - HydroxyApatite" ],
+      "correct_answers": [0, 1,3]
+    },
+    {
+      "id": "5-22",
+      "question_text": "다음의 설명에 알맞은 표면처리를 기입하시오.",
+      "question_info": [
+        "티타늄 분말을 플라즈마 스프레이로 분사한 표면으로 2세대 최초로 출시되었으나, 플라그 침척 및 세척이 어려워 골손실이 많이 발생했고 현재 단종된 표면이다."],
+      "answer_type": "short",
+      "correct_answers": ["TPS"]
+    },
+    {
+      "id": "5-23",
+      "question_text": "다음의 설명에 알맞은 표면처리를 기입하시오.",
+      "question_info": [
+        "알루미나로 블라스팅 후 황산으로 식각처리한 표면으로 표면거칠기가 2.5~3.0μm 수준이다. 국내 시장에서 가장 많이 사용되고 있다."],
+      "answer_type": "short",
+      "correct_answers": ["SLA"]
+    },
+    {
+      "id": "5-24",
+      "question_text": "다음의 설명에 알맞은 표면처리를 기입하시오.",
+      "question_info": [
+        "세라믹 분말을 블라스팅 처리한 표면으로 표면 거칠기가 1.2~1.8μm 수준이다. 당사에서 국내최초 출시했으나, 개선된 기술력으로 현재는 일부 사양만 제외하고 단종처리 되었다."],
+      "answer_type": "short",
+      "correct_answers": ["RBM"]
+    },
+    {
+      "id": "5-25",
+      "question_text": "3세대 표면에 대한 설명으로 옳은 것을 모두 고르시오. (2개)",
+      "answer_type": "multiple_choice",
+      "options": ["대표적으로 HA 코팅과 초친수성 표면이 있다","표면적 증대의 개념을 최초로 도입했다","2세대 표면에 화학적 개질을 더해 골유착 성능을 향상시켰다","대다수 임플란트 제조사에서 초친수성 표면을 적용하고 있다"],
+      "correct_answers": [0,2]
+    },
+    {
+      "id": "5-26",
+      "question_text": "3세대 표면의 종류와 영문이 알맞게 짝지어진 것을 모두 고르시오. (2개)",
+      "answer_type": "multiple_choice",
+      "options": ["TPS - Titanium Plasma Spray","RBM - Resorbable Blast Media","CA - Calcium SA","SLA - Sandblasted with Large grit and Acid Etched", "HA - HydroxyApatite"],
+      "correct_answers": [2,4]
+    },
+    {
+      "id": "5-27",
+      "question_text": "초친수성 표면에 대한 설명으로 옳은 것을 모두 고르시오. (2개)",
+      "answer_type": "multiple_choice",
+      "options": ["2세대의 대표적 표면처리","모든 제조사에서 적용한 표면처리","표면 거칠기는 1.2~1.8μm 내외","혈액젖음성이 우수한 표면", "2세대 표면 대비 골유착을 앞당긴 표면처리"],
+      "correct_answers": [3,4]
+    },
+    {
+      "id": "5-28",
+      "question_text": "HA 코팅 표면처리에 대한 설명으로 옳은 것을 모두 고르시오. (2개)",
+      "answer_type": "multiple_choice",
+      "options": ["사람 뼈와 동일한 성분을 코팅","국내 모든 제조사에서 보유한 표면","초기 골반응이 매우 우수","초친수성으로 혈병형성이 빠름", "당사 대표 표면으로 CA와 BA 제품 보유"],
+      "correct_answers": [0, 2]
+    },
+    {
+      "id": "5-29",
+      "question_text": "초친수성 + α로 현재 가장 진보된 표면으로 각광받고 있는 당사의 중점 제품은? (2개)",
+      "answer_type": "multiple_choice",
+      "options": ["SA","CA","HA","BA", "SOI"],
+      "correct_answers": [3,4]
+    },
+    {
+      "id": "5-30",
+      "question_text": "성장인자 접목 등 생물학적 특성을 부여한 제품은 4세대 표면으로 분류된다. 4세대 표면에 대한 설명 중 옳은 것은?",
+      "answer_type": "multiple_choice",
+      "options": ["해외 메이저 제조사에서 이미 개발하여 판대 중이다.","임상에서는 혈소판유래성장인자(PRP, PRF)가 활용되고 있다","현재 연구개발이 활발히 진행되고 있다","수술실패의 위험이 커 4세대를 건너뛰고 5세대 표면으로 연구가 진행 중이다."],
+      "correct_answers": [1,2]
+    },
+    {
+      "id": "6-1",
+      "question_text": "자연치가 상실될 수 있는 이유를 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["노화","심한 치아우식","치아 변색","강한 외부 충격", "선천적 영구치 결손"],
+      "correct_answers": [0,1,3,4]
+    },
+    {
+      "id": "6-2",
+      "question_text": "임플란트의 구성품 중 [ Implant 상부 보철물의 중간 연결고리 역할 ]을 하는 것은 무엇인가?",
+      "answer_type": "multiple_choice",
+      "options": ["Implant","Abutment","Abutment Screw","Cover Screw", "Crown"],
+      "correct_answers": [1]
+    },
+    {
+      "id": "6-3",
+      "question_text": "아래 그림의 Implant의 구조에 알맞은 명칭을 기재하시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["Paltform","Thread","Cutting Edge"],
+      "image": "/static/images/6-3.png"
+    },
+    {
+      "id": "6-4~7",
+      "question_text": "아래 그림의 Implant의 모델명을 기재하시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["KS System","TS System","SS System", "US System"],
+      "image": "/static/images/6-4.png"
+    },
+    {
+      "id": "6-8~10",
+      "question_text": "아래 빈칸을 채우시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["External","Hex","Mini/Regular/Wide"],
+      "image": "/static/images/6-8.png"
+    },
+    {
+      "id": "6-11",
+      "question_text": "당사 Implant Body Type의 각도를 적으시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["0","1.5","6"],
+      "image": "/static/images/6-11.png"
+    },
+    {
+      "id": "6-12",
+      "question_text": "당사 Implant System 중 내부 Connection이 Octa로 되어있는 System은?",
+      "answer_type": "single_choice",
+      "options": ["TS","SS", "US", "MS", "KS"],
+      "correct_answers": [1]
+    },
+    {
+      "id": "6-13",
+      "question_text": "TS System의 설명 중 옳은 것을 모두 고르시오",
+      "answer_type": "multiple_choice",
+      "options": ["Collar나 Hex 돌출 없이 Body 전체에 나사산만 있는 구조의 Implant","다양한 사양과 상부가 구비되어 있어 모든 적응증에 활용 가능","External Hex Type","Body Type은 I / II / III / IV Type 으로 구분", "non-submerged Type"],
+      "correct_answers": [0,1]
+    },
+    {
+      "id": "6-14",
+      "question_text": "SS System의 설명 중 옳은 것을 모두 고르시오",
+      "answer_type": "multiple_choice",
+      "options": ["나사산 윗부분이 Machined 표면의 Collar부로 이루어진 1 Stage 전용 Implant","치은 높이까지 디자인된 Collar부로 심미성이 떨어져 전치부에 주로 사용","II / III / IV Type 으로 구성","11° Morse Taper 구조", "구조적으로 매우 안정적이라 저작압이 많이 가해지는 대구치에 활용 가능"],
+      "correct_answers": [0,4]
+    },
+    {
+      "id": "6-15",
+      "question_text": "SS System의 설명 중 옳은 것을 모두 고르시오",
+      "answer_type": "multiple_choice",
+      "options": ["Universal Solution","나사산 윗부분으로 돌출된 External Hex Connection을 가진 Implant","3.5 미만의 적응증 에서도 사용이 가능하다.","Path가 좋지 않을 경우 보철이 비교적 수월하다.", "Internal Submerged Type"],
+      "correct_answers": [0,1, 3]
+    },
+    {
+      "id": "6-16",
+      "question_text": "MS System의 설명 중 옳은 것을 모두 고르시오",
+      "answer_type": "multiple_choice",
+      "options": ["Denture 적응증은 시술 불가능","Submerged Type으로 2 Stage 시술 전용","Implant와 Abutment 부위가 Screw를 통해 연결되는 것이 아닌 일체형","하악 전치부와 같은 좁은 치간용 One Body Type Implant"],
+      "correct_answers": [2, 3]
+    },
+    {
+      "id": "6-17",
+      "question_text": "MS System 하악 전치부와 같이 좁은 골폭과 협소한 공간의 결손치에 사용할 수 있는 Implant는?",
+      "answer_type": "single_choice",
+      "options": ["MS Narrow Ridge","MS Denture","MS Provisional"],
+      "correct_answers": [0]
+    },
+    {
+      "id": "6-18",
+      "question_text": "KS System의 설명 중 옳은 것을 모두 고르시오",
+      "answer_type": "multiple_choice",
+      "options": ["TS System과 Cutting Edge 방향이 반대","TS System의 업그레이드 버전의 New Connection","II, III, IV Type 출시 완료", "15° Morse Taper Connection 구조", "US와 동일한 외형을 가짐"],
+      "correct_answers": [0,1,3]
+    },
+    {
+      "id": "6-19",
+      "question_text": "TS 와 KS는 외형이 거의 동일하다. 외형상으로 구분하는 방법은?",
+      "answer_type": "short",
+      "correct_answers": ["Cutting Edge 방향이 반대"]
+    },
+    {
+      "id": "6-20",
+      "question_text": "SS System은 IV Type이 없다. 그 이유를 서술하시오.",
+      "answer_type": "short",
+      "correct_answers": ["IV Type Implant는 soft bone 전용으로 2 Stage 시술용인데 반해, SS Implant는 치은 높이까지 높게 디자인 된 1 Stage 시술용 Implant. → 2 Stage 전용 IV Type 디자인 없음."]
+    },
+    {
+      "id": "7-1",
+      "question_text": "다음 중 III, IV Type Implant를 모두 식립 할 수 있는 KIT를 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["Taper KIT", "MS KIT", "CAS KIT", "OssBuilder KIT", "123 Straight Simple KIT", "LAS KIT", "Ortho KIT", "ESR KIT", "ESSET KIT", "Hanaro KIT", "Ultra KIT", "EFR KIT", "Osteotome KIT", "Ridge Split KIT", "Bone Screw KIT", "Sinus KIT", "Bone Spreader KIT", "Prosthetic KIT", "IM-Sure KIT", "485 KIT", "122 Taper KIT"],
+      "correct_answers": [0,20]
+    },
+    {
+      "id": "7-2",
+      "question_text": "다음 중 Digital Guide 시술 KIT를 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["Taper KIT", "MS KIT", "CAS KIT", "OssBuilder KIT", "123 Straight Simple KIT", "LAS KIT", "Ortho KIT", "ESR KIT", "ESSET KIT", "Hanaro KIT", "Ultra KIT", "EFR KIT", "Osteotome KIT", "Ridge Split KIT", "Bone Screw KIT", "Sinus KIT", "Bone Spreader KIT", "Prosthetic KIT", "IM-Sure KIT", "485 KIT", "122 Taper KIT"],
+      "correct_answers": [12]
+    },
+    {
+      "id": "7-3",
+      "question_text": "다음 중 MS KIT로 시술할 수 없는 Implant 를 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["MS Provisional","MS Narrow Ridge", "MS Denture","TS III 3.0 x 10mm"],
+      "correct_answers": [3]
+    },
+    {
+      "id": "7-4",
+      "question_text": "다음 중 Taper KIT로 식립 가능한 Implant Tyle을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["TSII Implant","TSIII Implant", "TSIV Implant", "SSII Implant", "SSIII Implant", "USII Implant", "USIII Implant", "USIV Implant", "KSIII Implant"],
+      "correct_answers": [1,2,4,7,8]
+    },
+    {
+      "id": "7-5",
+      "question_text": "다음 중 Taper Implant를 간단하게 식립할 수 있는 122 Taper Drill로 구성된 Surgical Kit는 무엇입니까?",
+      "answer_type": "single_choice",
+      "options": ["122 Taper KIT", "MS KIT", "Hanaro KIT", "123 Straight Simple KIT", "LAS KIT", "CAS KIT", "ESSET KIT", "Ultra KIT", "485 KIT", "Taper KIT"],
+      "correct_answers": [0]
+    },
+    {
+      "id": "7-6",
+      "question_text": "다음  중 Taper KIT로 식립 할 수 없는 직경의 Implant를 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["Ø3.0", "Ø3.5", "Ø4.5", "Ø5.0", "Ø5.5", "Ø6.0", "Ø7.0"],
+      "correct_answers": [4,5,6]
+    },
+    {
+      "id": "7-7",
+      "question_text": "다음  중 122 Taper KIT로 식립 할 수 없는 직경의 Implant를 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["Ø3.0", "Ø3.5", "Ø4.5", "Ø5.0", "Ø6.0", "Ø7.0"],
+      "correct_answers": [4,5]
+    },
+    {
+      "id": "7-8",
+      "question_text": "다음 중 구치부와 같이 넓은 골폭에 적합한 Taper Ultra-Wide Implant 식립이 필요한 경우 사용할 수 있는 KIT는 무엇입니까?",
+      "answer_type": "single_choice",
+      "options": ["122 Taper KIT", "MS KIT", "Hanaro KIT", "123 Straight Simple KIT", "LAS KIT", "CAS KIT", "ESSET KIT", "Ultra KIT", "485 KIT", "Taper KIT"],
+      "correct_answers": [7]
+    },
+    {
+      "id": "7-9~12",
+      "question_text": "다음 그림에 알맞은 Tool 종류의 번호를 빈칸에 적으시오.",
+      "question_info": [
+        "① Implant Driver : Implant를 심는 Driver","② 기타 보조 기구 : 임플란트 수술에 필요한 보조 기구","③ Proshetic Driver : 스크류를 풀거나 잠그는 Driver", "④ Surgical Drill : 뼈에 구멍을 뚫는 Drill"],
+      "answer_type": "multiple_short",
+      "correct_answers": ["4", "1", "3", "2"],
+      "image": "/static/images/7-9.png"
+    },
+    {
+      "id": "7-13",
+      "question_text": "하악에 Short Implant를 안전하게 식립 가능하게 하는 것은 어느 KIT인지 고르시오.",
+      "answer_type": "single_choice",
+      "options": ["485 KIT", "LAS KIT", "122 Taper KIT","123 Simple KIT"],
+      "correct_answers": [0]
+    },
+    {
+      "id": "7-14",
+      "question_text": "485 KIT에서 '485'가 의미하는 바가 무엇인지 서술하시오.",
+      "answer_type": "short",
+      "correct_answers": ["4mm ~ 8.5mm 까지 식립 가능하다는 의미"]
+    },
+    {
+      "id": "7-15",
+      "question_text": "최대 3번의 간단한 술식으로 간편하고 편리한 Surgical KIT는 무엇인지 고르시오.",
+      "answer_type": "single_choice",
+      "options": ["Taper KIT", "Ultra KIT", "123 Straight KIT", "Hanaro KIT"],
+      "correct_answers": [2]
+    },
+    {
+      "id": "7-16",
+      "question_text": "123 Straight KIT의 특징으로 올바른 것을 모두 고르시오.",
+      "answer_type": "multiple_choice",
+      "options": ["II Type, III Type Implant 모두 식립이 가능하다.", "KS, TS, SS, US Implant 모두 식립 할 수 있는 통합 술식을 제공한다.", "최대 3단계의 Drilling으로 간단한 시술 Sequence를 제공한다.", "Taper Implant에 최적화 되어있는 KIT이다."],
+      "correct_answers": [0,1,2]
+    },
+    {
+      "id": "7-17",
+      "question_text": "다음 중 하악 전치부 같이 좁은 골폭과 협소한 공간에 적합한 MS Implant를 식립할 경우 사용할 수 있는 전용 KIT는 무엇입니까?",
+      "answer_type": "single_choice",
+      "options": ["MS KIT", "Ridge Split KIT", "Bone Spreader KIT", "ESSET KIT"],
+      "correct_answers": [0]
+    },
+    {
+      "id": "7-18",
+      "question_text": "OneGuide Surgery의 임상적 장점에 대한 설명으로 맞는 것은? (2개)",
+      "answer_type": "multiple_choice",
+      "options": ["원하는 위치에 정밀한 임플란트 식립이 가능하다.", "OneGuide를 사용해도 좁은 골폭, 무치악, 상악동 등 어려운 케이스는 불가능 하다.", "Flapless 방식으로 간편하고 편리한 수술이 가능하다.", "당일 임시 보철은 현재 기술적 한계로 ㅇ렵기 때문에 일반적인 수술과 차이가 없다."],
+      "correct_answers": [0,2]
+    },
+    {
+      "id": "7-19",
+      "question_text": "다음 중 OneGuide 수술에 대한 특징을 모두 고른 것은?",
+      "question_info": [
+        "a. 파노라마 및 CT 치수 측정을 통한 Implant 사양 결정",
+        "b, CT 데이터 + 구강 Scan 데이터를 통한 3차원 진단 (골폭, 골질, 신경)", 
+        "c. 감각에 의존하지 않고 정확한 수술 가능"
+      ],
+      "answer_type": "single_choice",
+      "options": ["a", "a, b", "b", "b, c", "a, c"],
+      "correct_answers": [3]
+    },
+    {
+      "id": "7-20",
+      "question_text": "Taper Ultra KIT가 필요한 경우 3가지에 대해 쓰시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["failed implant 제거 후 즉시 교체 식립이 필요한 경우", "발치 후 즉시 식립이 필요한 경우", "골폭이 충분히 넓은 경우"]
+    },
+    {
+      "id": "7-21",
+      "question_text": "다음은 KIT 이름에 대한 설명으로 빈칸을 알맞게 채우시오",
+      "question_info": [
+        "( ① ) KIT는 Soft Bone에서 1번 Normal Bone에서 2번 Hard Bond에서 2번의 술식을 III, IV Type Implant를 식립 할 수 있는 KIT이다.",
+        "( ② ) KIT는 Soft Bone에서 1번 Normal Bone에서 2번 Hard Bond에서 3번의 술식을 II, III Type Implant를 식립 할 수 있는 KIT이다."
+      ],
+      "answer_type": "multiple_short",
+      "correct_answers": ["122 Taper", "123 Straight"]
+    },
+    {
+      "id": "7-22",
+      "question_text": "다음은 122 Taper KIT에 대표 구성품으로 Taper Body에 최적화 된 122 Taper Drill을 고르시오.",
+      "answer_type": "single_choice",
+      "options": ["그냥 이 모양으로 외워야 해요"],
+      "correct_answers": [0],
+      "image": "/static/images/7-22.jpg"
+    },
+    {
+      "id": "7-23~27",
+      "question_text": "다음 그림을 보고 빈칸에 알맞은 Taper KIT Tool의 명칭을 적으시오.",
+      "answer_type": "multiple_short",
+      "correct_answers": ["Lance Drill", "Side Cut Drill", "Twist Drill", "Taper Drill", "Taper Cortical Drill"],
+      "image": "/static/images/7-23.png"
+    },
+    {
+      "id": "7-28~30",
+      "question_text": "다음 그림을 보고 빈칸에 알맞은 Taper KIT Tool의 명칭을 적으시오.",
+      "question_info": [
+        "a. 123 Straight KIT  b. Taper KIT  C. One guide KIT  d. 122 Taper KIT  e. 485 KIT",
+        "28) ( ① ) 는 Taper Implant 형상에 최적화된 최대 2회 안에 술식이 끝나는 Drill로 구성된 임플란트 식립 KIT 이다.",
+        "29) ( ② ) 는 II, III Type Implant 형상에 최적화된 최대 3회 안에 술식이 끝나는 Drill로 구성된 임플란트 식립 KIT이다.",
+        "30) ( ③ ) 는 4.0~8.5 mm Short Implant를 하악에 안전하게 시술 할 수 있는 KIT이다."
+      ],
+      "answer_type": "multiple_short",
+      "correct_answers": ["d", "a", "e"]
+    }
+  ]
+}

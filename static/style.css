@@ -1,0 +1,153 @@
+/* 기본 페이지 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 수직 가운데 정렬 대신 위에서 시작 */
+    min-height: 100vh;
+}
+
+/* 문제 선택 드롭다운 스타일 */
+.test-dropdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#question-dropdown {
+    width: 220px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #28a745;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjU4MTUgMC4wNTA0OTU1TDYuMDA2MjMgNS42MTUzNEwwLjQxOTcxNiAwLjA1MDQ5NTVMMCAwLjQ3NjgxN0w2LjAwNjIzIDYuMzAwNzFMMTIgMC40NzY4MTdMMTEuNTgxNSAwLjA1MDQ5NTVaIiBmaWxsPSIjNzg3ODc4Ii8+PC9zdmc+');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 8px;
+}
+
+#question-dropdown:hover {
+    background-color: #e9ecef;
+    border-color: #218838;
+}
+
+#question-dropdown:focus {
+    outline: none;
+    border-color: #218838;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+#question-dropdown::-ms-expand {
+    display: none;
+}
+
+#question-dropdown option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* 퀴즈 컨테이너 스타일 */
+.quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* 추가적인 여백을 주어 스크롤 여유 공간 확보 */
+}
+
+/* 텍스트와 레이아웃 스타일 */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 버튼 스타일 */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* 버튼을 밑으로 내리기 위한 여백 */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* 입력 영역 스타일 */
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    text-align: left;
+}
+
+/* 정답 결과 스타일 */
+#result, #correct-answer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#result {
+    color: #007bff;
+}
+
+#correct-answer {
+    color: #dc3545;
+}
+
+/* 퀴즈 완료 메시지 */
+#completion-message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #28a745;
+}
+
+/* 추가 정보 스타일 */
+ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 16px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평가 문제</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="icon" href="static/images/osstem_logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- 문제 ID 선택 드롭다운 영역 -->
+    <div class="test-dropdown">
+        <select id="question-dropdown" onchange="loadSpecificQuestion(this.value)">
+            <option value="">문제를 선택하세요</option>
+        </select>
+    </div>
+
+    <div class="quiz-container">
+        <h1>평가 문제</h1>
+        <p id="question-text">여기에 문제가 표시됩니다.</p>
+        <ul id="question-info" style="display: none;"></ul>
+        <div id="answer-area"></div>
+        <button id="submit-answer" onclick="submitAnswer()">정답 제출</button>
+        <button id="next-question" onclick="loadNextQuestion()" style="display: none;">다음 문제</button>
+        <button id="restart-quiz" onclick="resetQuiz()" style="display: none;">다시 시작하기</button>
+        <p id="result"></p>
+        <p id="correct-answer"></p>
+        <p id="completion-message"></p>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
