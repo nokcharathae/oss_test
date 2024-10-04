@@ -32,7 +32,7 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     position: relative;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjU4MTUgMC4wNTA0OTU1TDYuMDA2MjMgNS42MTUzNEwwLjQxOTcxNiAwLjA1MDQ5NTVMMCAwLjQ3NjgxN0w2LjAwNjIzIDYuMzAwNzFMMTIgMC40NzY4MTdMMTEuNTgxNSAwLjA1MDQ5NTVaIiBmaWxsPSIjNzg3ODc4Ii8+PC9zdmc+');
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjU4MTUgMC4wNTA0OTVMMi41NjE1IDIuMzA5NkwwLjQxOTcxNiAwLjA1MDQ5NTVaIiBmaWxsPSIjNzg3ODc4Ii8+PC9zdmc+');
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 12px 8px;
@@ -67,7 +67,7 @@ body {
     max-width: 600px;
     width: 100%;
     text-align: center;
-    margin-bottom: 20px; /* 추가적인 여백을 주어 스크롤 여유 공간 확보 */
+    margin-bottom: 20px;
 }
 
 /* 텍스트와 레이아웃 스타일 */
@@ -91,7 +91,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 20px; /* 버튼을 밑으로 내리기 위한 여백 */
+    margin-top: 20px;
 }
 
 button:hover {
@@ -150,4 +150,33 @@ ul {
 
 ul li {
     font-size: 16px;
+}
+
+/* 모바일 및 작은 화면용 스타일 */
+@media (max-width: 768px) {
+    .quiz-container {
+        max-width: 100%; /* 화면의 최대 너비로 확장 */
+        margin: 0 10px; /* 양쪽에 여백을 두어 너무 꽉 차지 않도록 조정 */
+    }
+
+    h1 {
+        font-size: 20px; /* 모바일에서 헤딩 크기 조정 */
+    }
+
+    p, label {
+        font-size: 16px; /* 텍스트 크기 줄이기 */
+    }
+
+    button {
+        width: 100%; /* 버튼이 전체 너비를 차지하도록 */
+        padding: 12px;
+    }
+
+    input[type="text"] {
+        width: 100%; /* 텍스트 입력 필드가 화면 전체 너비를 차지하도록 */
+    }
+
+    #question-dropdown {
+        width: 100%; /* 드롭다운도 전체 너비 차지 */
+    }
 }
