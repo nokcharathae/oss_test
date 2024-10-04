@@ -60,7 +60,9 @@ function loadQuestion() {
     loadSpecificQuestion(randomQuestion.id);
 
     // 다음 문제가 로드되었으므로 정답 제출 버튼을 다시 표시
-    document.getElementById("submit-answer").style.display = 'inline-block';
+    const submitButton = document.getElementById("submit-answer");
+    submitButton.disabled = false;  // 정답 제출 버튼 활성화
+    submitButton.style.display = 'inline-block';  // 정답 제출 버튼 표시
     document.getElementById("next-question").style.display = 'none';  // 다음 문제 버튼 숨기기
 }
 
@@ -156,7 +158,7 @@ function displayQuestion(data) {
 
 function submitAnswer() {
     const submitButton = document.getElementById("submit-answer");
-    submitButton.disabled = true;  // 정답 제출 후 비활성화
+    submitButton.disabled = true;  // 정답 제출 후 버튼 비활성화
 
     let userAnswer;
 
@@ -174,7 +176,7 @@ function submitAnswer() {
         userAnswer = selected ? parseInt(selected.value) : null;
     }
 
-    // 정답 체크 로직 추가
+    // 정답 체크 로직
     let correct = false;
     if (currentAnswerType === 'short' || currentAnswerType === 'long') {
         correct = currentQuestion.correct_answers.some(answer => answer.trim().toLowerCase() === userAnswer.trim().toLowerCase());
@@ -199,10 +201,10 @@ function submitAnswer() {
 }
 
 function loadNextQuestion() {
-    loadQuestion();  // 새로운 문제를 로드
+    loadQuestion();  // 새로운 문제 로드
     const submitButton = document.getElementById("submit-answer");
     submitButton.disabled = false;  // 정답 제출 버튼 다시 활성화
-    submitButton.style.display = 'inline-block'; // 혹시라도 보이지 않는 경우를 대비해
+    submitButton.style.display = 'inline-block';  // 정답 제출 버튼 표시
     const nextButton = document.getElementById("next-question");
     nextButton.style.display = 'none';  // 다음 문제 버튼 숨기기
     document.getElementById("result").innerText = '';  // 결과 초기화
