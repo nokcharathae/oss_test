@@ -173,7 +173,7 @@ function submitAnswer() {
         userAnswer = Array.from(selected).map(checkbox => parseInt(checkbox.value));
     } else if (currentAnswerType === 'single_choice') {
         let selected = document.querySelector('input[name="answer"]:checked');
-        userAnswer = selected ? parseInt(selected.value) : null;
+        userAnswer = selected ? parseInt(selected.value) : null;  // 사용자가 선택한 값을 정수로 변환
     }
 
     // 정답 체크 로직
@@ -183,7 +183,7 @@ function submitAnswer() {
     } else if (currentAnswerType === 'multiple_short') {
         correct = JSON.stringify(userAnswer) === JSON.stringify(currentQuestion.correct_answers.map(ans => ans.trim().toLowerCase()));
     } else if (currentAnswerType === 'multiple_choice' || currentAnswerType === 'single_choice') {
-        correct = JSON.stringify(userAnswer.sort()) === JSON.stringify(currentQuestion.correct_answers.sort());
+        correct = JSON.stringify([userAnswer]) === JSON.stringify(currentQuestion.correct_answers);
     }
 
     const resultText = correct ? "정답입니다!" : "틀렸습니다.";
@@ -200,8 +200,9 @@ function submitAnswer() {
 
     // '다음 문제' 버튼 표시
     const nextButton = document.getElementById("next-question");
-    nextButton.style.display = 'inline-block';  // 항상 다음 문제 버튼을 표시
+    nextButton.style.display = 'inline-block';  // 다음 문제 버튼 표시
 }
+
 
 
 function loadNextQuestion() {
