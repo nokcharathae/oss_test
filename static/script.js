@@ -41,13 +41,7 @@ function loadSpecificQuestion(questionId) {
 // 문제를 로드하면서 중복되지 않도록 설정
 function loadQuestion() {
     if (usedQuestions.length === allQuestions.length) {
-        document.getElementById("question-text").innerText = '';
-        document.getElementById("question-info").style.display = 'none';
-        document.getElementById("answer-area").innerHTML = '';
-        document.getElementById("result").innerText = '';
-        document.getElementById("correct-answer").innerText = '';
-        document.getElementById("completion-message").innerText = "수고하셨습니다!";
-
+        // 모든 문제를 다 풀었을 때의 처리
         document.getElementById("submit-answer").style.display = 'none';
         document.getElementById("restart-quiz").style.display = 'inline-block';
         return;
@@ -64,7 +58,12 @@ function loadQuestion() {
     usedQuestions.push(randomQuestion.id);
 
     loadSpecificQuestion(randomQuestion.id);
+
+    // 다음 문제가 로드되었으므로 정답 제출 버튼을 다시 표시
+    document.getElementById("submit-answer").style.display = 'inline-block';
+    document.getElementById("next-question").style.display = 'none';  // 다음 문제 버튼 숨기기
 }
+
 
 // 문제를 화면에 출력하는 함수
 function displayQuestion(data) {
@@ -200,11 +199,11 @@ function submitAnswer() {
 
 // '다음 문제' 버튼을 눌렀을 때 문제를 로드하는 함수
 function loadNextQuestion() {
-    loadQuestion();
-    document.getElementById("submit-answer").style.display = 'inline-block';  // Show submit button again for the next question
-    document.getElementById("next-question").style.display = 'none';  // Hide the next question button initially
-    document.getElementById("result").innerText = '';  // Clear result text from previous question
-    document.getElementById("correct-answer").innerText = '';  // Clear correct answer text from previous question
+    loadQuestion(); // 새로운 문제 로드
+    document.getElementById("submit-answer").style.display = 'inline-block';  // 정답 제출 버튼 다시 표시
+    document.getElementById("next-question").style.display = 'none';  // 다음 문제 버튼 숨기기
+    document.getElementById("result").innerText = '';  // 이전 문제의 결과 텍스트 제거
+    document.getElementById("correct-answer").innerText = '';  // 이전 문제의 정답 텍스트 제거
 }
 
 // Reset quiz to start from the first question
