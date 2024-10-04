@@ -194,6 +194,7 @@ function submitAnswer() {
         document.getElementById("correct-answer").innerText = correctAnswersText;
     }
 
+
     // '다음 문제' 버튼 표시
     const nextButton = document.getElementById("next-question");
     nextButton.style.display = 'inline-block';  // 다음 문제 버튼 표시
