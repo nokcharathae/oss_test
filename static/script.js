@@ -35,15 +35,19 @@ function loadSpecificQuestion(questionId) {
     currentQuestion = allQuestions.find(q => q.id === questionId);
     if (currentQuestion) {
         displayQuestion(currentQuestion);
-        
+
         // 정답 제출 버튼을 다시 활성화
         const submitButton = document.getElementById("submit-answer");
-        submitButton.disabled = false;  // 버튼을 활성화
-        submitButton.style.display = 'inline-block';  // 정답 제출 버튼을 보이도록 설정
-        
-        // 이전 문제에서 나타났던 다음 문제 버튼을 숨기기
+        submitButton.disabled = false;  // 버튼 활성화
+        submitButton.style.display = 'inline-block';  // 정답 제출 버튼 보이기
+
+        // 결과 초기화
+        document.getElementById("result").innerText = '';  // 결과 영역 초기화
+        document.getElementById("correct-answer").innerText = '';  // 정답 영역 초기화
+
+        // 다음 문제 버튼 숨기기
         const nextButton = document.getElementById("next-question");
-        nextButton.style.display = 'none';
+        nextButton.style.display = 'none';  // 다음 문제 버튼 숨기기
     }
 }
 
