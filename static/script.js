@@ -186,13 +186,18 @@ function submitAnswer() {
     const resultText = correct ? "정답입니다!" : "틀렸습니다.";
     document.getElementById("result").innerText = resultText;
 
-    if (!correct && currentQuestion.correct_answers) {
+    // 틀린 경우 정답을 옵션 값으로 출력
+    if (!correct && currentAnswerType === 'multiple_choice' || currentAnswerType === 'single_choice') {
+        const correctAnswersText = `정답: ${currentQuestion.correct_answers.map(index => currentQuestion.options[index]).join(', ')}`;
+        document.getElementById("correct-answer").innerText = correctAnswersText;
+    } else if (!correct && currentQuestion.correct_answers) {
         const correctAnswersText = `정답: ${currentQuestion.correct_answers.join(', ')}`;
         document.getElementById("correct-answer").innerText = correctAnswersText;
     }
 
     const nextButton = document.getElementById("next-question");
     nextButton.style.display = 'inline-block';  // 다음 문제 버튼 표시
+    submitButton.style.display = 'none';  // Hide submit button after answer submission
 }
 
 
