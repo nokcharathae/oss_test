@@ -223,8 +223,13 @@ function checkAnswer(userAnswer) {
         return currentQuestion.correct_answers.some(answer => answer.trim().toLowerCase() === userAnswer.trim().toLowerCase());
     } else if (currentAnswerType === 'multiple_short') {
         return JSON.stringify(userAnswer) === JSON.stringify(currentQuestion.correct_answers.map(ans => ans.trim().toLowerCase()));
-    } else if (currentAnswerType === 'multiple_choice' || currentAnswerType === 'single_choice') {
-        return JSON.stringify([userAnswer]) === JSON.stringify(currentQuestion.correct_answers);
+    } else if (currentAnswerType === 'multiple_choice') {
+        // multiple_choice의 경우 배열의 순서에 상관없이 비교
+        const sortedUserAnswer = userAnswer.sort();  // 사용자 답변을 정렬
+        const sortedCorrectAnswer = currentQuestion.correct_answers.sort();  // 정답을 정렬
+        return JSON.stringify(sortedUserAnswer) === JSON.stringify(sortedCorrectAnswer);
+    } else if (currentAnswerType === 'single_choice') {
+        return userAnswer === currentQuestion.correct_answers[0];  // 단일 선택의 경우 단일 값 비교
     }
 }
 
