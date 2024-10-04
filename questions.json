@@ -343,7 +343,7 @@
     {
       "id": "4-7",
       "question_text": "다음 중 브릿지 치료 방법의 특징으로 옳은 것을 모두 고르시오.",
-      "answer_type": "multiple_short",
+      "answer_type": "multiple_choice",
       "options": ["치아를 삭제하지 않는다.", "치아가 상실된 부위에만 시술한다.", "인접치아를 삭제한다.", "염증이 생길 우려가 있다."],
       "correct_answers": [2, 3]
     },
