@@ -5,12 +5,12 @@ let currentQuestion = null;
 
 // 전체 문제 로드
 function loadAllQuestions() {
-    fetch('questions.json')  // Flask 백엔드 대신 로컬 JSON 파일을 로드
+    fetch('questions.json')
         .then(response => response.json())
         .then(data => {
             allQuestions = data.questions;
-            createQuestionDropdown();  // 문제 선택 드롭다운 생성
-            loadQuestion();  // 첫 번째 문제 로드
+            createQuestionDropdown();
+            loadQuestion();
         })
         .catch(error => console.error("Error loading questions:", error));
 }
@@ -18,7 +18,7 @@ function loadAllQuestions() {
 // 문제 ID 드롭다운을 동적으로 생성하는 함수
 function createQuestionDropdown() {
     const dropdown = document.getElementById('question-dropdown');
-    dropdown.innerHTML = '<option value="">문제를 선택하세요</option>';  // 기존 옵션 초기화
+    dropdown.innerHTML = '<option value="">문제를 선택하세요</option>';
 
     allQuestions.forEach(question => {
         const option = document.createElement('option');
@@ -30,56 +30,45 @@ function createQuestionDropdown() {
 
 // 특정 문제 ID를 로드하는 함수
 function loadSpecificQuestion(questionId) {
-    if (!questionId) return;  // 선택된 문제가 없으면 종료
+    if (!questionId) return;
 
     currentQuestion = allQuestions.find(q => q.id === questionId);
     if (currentQuestion) {
+        resetUIForNewQuestion();
         displayQuestion(currentQuestion);
-
-        // 정답 제출 버튼을 다시 활성화
-        const submitButton = document.getElementById("submit-answer");
-        submitButton.disabled = false;  // 버튼 활성화
-        submitButton.style.display = 'inline-block';  // 정답 제출 버튼 보이기
-
-        // 결과 초기화
-        document.getElementById("result").innerText = '';  // 결과 영역 초기화
-        document.getElementById("correct-answer").innerText = '';  // 정답 영역 초기화
-
-        // 다음 문제 버튼 숨기기
-        const nextButton = document.getElementById("next-question");
-        nextButton.style.display = 'none';  // 다음 문제 버튼 숨기기
     }
 }
 
-
-// 문제를 로드하면서 중복되지 않도록 설정
+// 새로운 문제를 로드하는 함수
 function loadQuestion() {
     if (usedQuestions.length === allQuestions.length) {
-        // 모든 문제를 다 풀었을 때의 처리
         document.getElementById("submit-answer").style.display = 'none';
         document.getElementById("restart-quiz").style.display = 'inline-block';
         return;
     }
 
-    let randomIndex = Math.floor(Math.random() * allQuestions.length);
-    let randomQuestion = allQuestions[randomIndex];
-
-    while (usedQuestions.includes(randomQuestion.id)) {
-        randomIndex = Math.floor(Math.random() * allQuestions.length);
+    let randomQuestion;
+    do {
+        const randomIndex = Math.floor(Math.random() * allQuestions.length);
         randomQuestion = allQuestions[randomIndex];
-    }
+    } while (usedQuestions.includes(randomQuestion.id));
 
     usedQuestions.push(randomQuestion.id);
-
     loadSpecificQuestion(randomQuestion.id);
-
-    // 다음 문제가 로드되었으므로 정답 제출 버튼을 다시 표시
-    const submitButton = document.getElementById("submit-answer");
-    submitButton.disabled = false;  // 정답 제출 버튼 활성화
-    submitButton.style.display = 'inline-block';  // 정답 제출 버튼 표시
-    document.getElementById("next-question").style.display = 'none';  // 다음 문제 버튼 숨기기
 }
 
+// UI를 초기화하는 함수 (중복 제거)
+function resetUIForNewQuestion() {
+    const submitButton = document.getElementById("submit-answer");
+    const nextButton = document.getElementById("next-question");
+
+    submitButton.disabled = false;
+    submitButton.style.display = 'inline-block'; // 정답 제출 버튼 표시
+    nextButton.style.display = 'none';  // 다음 문제 버튼 숨기기
+
+    document.getElementById("result").innerText = '';
+    document.getElementById("correct-answer").innerText = '';
+}
 
 // 문제를 화면에 출력하는 함수
 function displayQuestion(data) {
@@ -89,155 +78,152 @@ function displayQuestion(data) {
     if (data.answer_type === 'multiple_choice') {
         questionText += " (중복 선택)";
     }
-
     document.getElementById("question-text").innerText = questionText;
-
-    // 추가된 정보 (question_info) 처리
-    let infoArea = document.getElementById("question-info");
-    if (data.question_info && data.question_info.length > 0) {
-        infoArea.innerHTML = '';  // 기존 내용을 초기화
-        data.question_info.forEach(info => {
-            let listItem = document.createElement("li");
-            listItem.textContent = info;
-            infoArea.appendChild(listItem);
-        });
-        infoArea.style.display = 'block';  // 정보가 있을 때만 표시
-    } else {
-        infoArea.style.display = 'none';  // 정보가 없을 때는 숨김
-    }
 
     let answerArea = document.getElementById("answer-area");
     answerArea.innerHTML = '';  // 기존 답변 영역 초기화
     currentAnswerType = data.answer_type;
 
-    // 이미지가 있는 경우 이미지 추가
     if (data.image) {
         let img = document.createElement("img");
-        img.src = data.image;  // 이미지 경로 설정
+        img.src = data.image;
         img.alt = "문제 이미지";
         img.style.maxWidth = "100%";
         img.style.marginBottom = "20px";
         answerArea.appendChild(img);
     }
 
-    // 서술형, 객관식 등의 질문 처리
     if (data.answer_type === 'short' || data.answer_type === 'long') {
-        let input = document.createElement("input");
-        input.type = "text";
-        input.id = "user-answer";
-        input.placeholder = "답변을 입력하세요";
-        answerArea.appendChild(input);
+        createShortOrLongAnswerField(answerArea);
     } else if (data.answer_type === 'multiple_short') {
-        data.correct_answers.forEach((_, index) => {
-            let input = document.createElement("input");
-            input.type = "text";
-            input.className = "user-answer";
-            input.placeholder = `답변 ${index + 1}을 입력하세요`;
-            answerArea.appendChild(input);
-            answerArea.appendChild(document.createElement("br"));
-        });
+        createMultipleShortAnswerFields(answerArea, data.correct_answers.length);
     } else if (data.answer_type === 'multiple_choice') {
-        data.options.forEach((option, index) => {
-            let label = document.createElement("label");
-            let checkbox = document.createElement("input");
-            checkbox.type = "checkbox";
-            checkbox.name = "answer";
-            checkbox.value = index;
-            label.appendChild(checkbox);
-            label.appendChild(document.createTextNode(option));
-            answerArea.appendChild(label);
-            answerArea.appendChild(document.createElement("br"));
-        });
+        createMultipleChoiceFields(answerArea, data.options);
     } else if (data.answer_type === 'single_choice') {
-        data.options.forEach((option, index) => {
-            let label = document.createElement("label");
-            let radio = document.createElement("input");
-            radio.type = "radio";
-            radio.name = "answer";
-            radio.value = index;
-            label.appendChild(radio);
-            label.appendChild(document.createTextNode(option));
-            answerArea.appendChild(label);
-            answerArea.appendChild(document.createElement("br"));
-        });
+        createSingleChoiceFields(answerArea, data.options);
     }
 
-    document.getElementById("result").innerText = '';  // 결과 초기화
-    document.getElementById("correct-answer").innerText = '';  // 정답 초기화
-
-    // '다음 문제' 버튼 숨기기 (초기 상태)
-    const nextButton = document.getElementById("next-question");
-    nextButton.style.display = 'none';
+    resetUIForNewQuestion();
 }
 
+// 서술형 또는 긴 답변 필드를 생성하는 함수
+function createShortOrLongAnswerField(answerArea) {
+    let input = document.createElement("input");
+    input.type = "text";
+    input.id = "user-answer";
+    input.placeholder = "답변을 입력하세요";
+    answerArea.appendChild(input);
+}
+
+// 여러 개의 짧은 답변 필드를 생성하는 함수
+function createMultipleShortAnswerFields(answerArea, count) {
+    for (let i = 0; i < count; i++) {
+        let input = document.createElement("input");
+        input.type = "text";
+        input.className = "user-answer";
+        input.placeholder = `답변 ${i + 1}을 입력하세요`;
+        answerArea.appendChild(input);
+        answerArea.appendChild(document.createElement("br"));
+    }
+}
+
+// 객관식 다중 선택 필드를 생성하는 함수
+function createMultipleChoiceFields(answerArea, options) {
+    options.forEach((option, index) => {
+        let label = document.createElement("label");
+        let checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.name = "answer";
+        checkbox.value = index;
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(option));
+        answerArea.appendChild(label);
+        answerArea.appendChild(document.createElement("br"));
+    });
+}
+
+// 객관식 단일 선택 필드를 생성하는 함수
+function createSingleChoiceFields(answerArea, options) {
+    options.forEach((option, index) => {
+        let label = document.createElement("label");
+        let radio = document.createElement("input");
+        radio.type = "radio";
+        radio.name = "answer";
+        radio.value = index;
+        label.appendChild(radio);
+        label.appendChild(document.createTextNode(option));
+        answerArea.appendChild(label);
+        answerArea.appendChild(document.createElement("br"));
+    });
+}
+
+// 정답 제출 로직
 function submitAnswer() {
     const submitButton = document.getElementById("submit-answer");
-    submitButton.disabled = true;  // 정답 제출 후 버튼 비활성화
+    submitButton.disabled = true;
 
-    let userAnswer;
+    let userAnswer = getUserAnswer();
 
-    // 답변 유형에 따라 사용자 답변을 수집
-    if (currentAnswerType === 'short' || currentAnswerType === 'long') {
-        userAnswer = document.getElementById("user-answer").value.trim();
-    } else if (currentAnswerType === 'multiple_short') {
-        let inputs = document.querySelectorAll(".user-answer");
-        userAnswer = Array.from(inputs).map(input => input.value.trim());
-    } else if (currentAnswerType === 'multiple_choice') {
-        let selected = document.querySelectorAll('input[name="answer"]:checked');
-        userAnswer = Array.from(selected).map(checkbox => parseInt(checkbox.value));
-    } else if (currentAnswerType === 'single_choice') {
-        let selected = document.querySelector('input[name="answer"]:checked');
-        userAnswer = selected ? parseInt(selected.value) : null;  // 사용자가 선택한 값을 정수로 변환
-    }
-
-    // 정답 체크 로직
-    let correct = false;
-    if (currentAnswerType === 'short' || currentAnswerType === 'long') {
-        correct = currentQuestion.correct_answers.some(answer => answer.trim().toLowerCase() === userAnswer.trim().toLowerCase());
-    } else if (currentAnswerType === 'multiple_short') {
-        correct = JSON.stringify(userAnswer) === JSON.stringify(currentQuestion.correct_answers.map(ans => ans.trim().toLowerCase()));
-    } else if (currentAnswerType === 'multiple_choice' || currentAnswerType === 'single_choice') {
-        correct = JSON.stringify([userAnswer]) === JSON.stringify(currentQuestion.correct_answers);
-    }
-
+    let correct = checkAnswer(userAnswer);
     const resultText = correct ? "정답입니다!" : "틀렸습니다.";
     document.getElementById("result").innerText = resultText;
 
-    // 틀린 경우 correct_answers의 인덱스를 기반으로 options 값 출력
-    if (!correct && (currentAnswerType === 'multiple_choice' || currentAnswerType === 'single_choice')) {
-        const correctAnswersText = `정답: ${currentQuestion.correct_answers.map(index => currentQuestion.options[index]).join(', ')}`;
-        document.getElementById("correct-answer").innerText = correctAnswersText;
-    } else if (!correct && (currentAnswerType === 'multiple_short' || currentAnswerType === 'short' || currentAnswerType === 'long')) {
-        const correctAnswersText = `정답: ${currentQuestion.correct_answers.join(', ')}`;
-        document.getElementById("correct-answer").innerText = correctAnswersText;
+    if (!correct) {
+        displayCorrectAnswer();
     }
 
-    // '다음 문제' 버튼 표시
-    const nextButton = document.getElementById("next-question");
-    nextButton.style.display = 'inline-block';  // 다음 문제 버튼 표시
+    document.getElementById("next-question").style.display = 'inline-block';
 }
 
+// 사용자 입력을 가져오는 함수
+function getUserAnswer() {
+    if (currentAnswerType === 'short' || currentAnswerType === 'long') {
+        return document.getElementById("user-answer").value.trim();
+    } else if (currentAnswerType === 'multiple_short') {
+        let inputs = document.querySelectorAll(".user-answer");
+        return Array.from(inputs).map(input => input.value.trim());
+    } else if (currentAnswerType === 'multiple_choice') {
+        let selected = document.querySelectorAll('input[name="answer"]:checked');
+        return Array.from(selected).map(checkbox => parseInt(checkbox.value));
+    } else if (currentAnswerType === 'single_choice') {
+        let selected = document.querySelector('input[name="answer"]:checked');
+        return selected ? parseInt(selected.value) : null;
+    }
+}
 
+// 정답 체크 로직
+function checkAnswer(userAnswer) {
+    if (currentAnswerType === 'short' || currentAnswerType === 'long') {
+        return currentQuestion.correct_answers.some(answer => answer.trim().toLowerCase() === userAnswer.trim().toLowerCase());
+    } else if (currentAnswerType === 'multiple_short') {
+        return JSON.stringify(userAnswer) === JSON.stringify(currentQuestion.correct_answers.map(ans => ans.trim().toLowerCase()));
+    } else if (currentAnswerType === 'multiple_choice' || currentAnswerType === 'single_choice') {
+        return JSON.stringify([userAnswer]) === JSON.stringify(currentQuestion.correct_answers);
+    }
+}
+
+// 정답을 표시하는 함수
+function displayCorrectAnswer() {
+    let correctAnswersText;
+    if (currentAnswerType === 'multiple_choice' || currentAnswerType === 'single_choice') {
+        correctAnswersText = `정답: ${currentQuestion.correct_answers.map(index => currentQuestion.options[index]).join(', ')}`;
+    } else {
+        correctAnswersText = `정답: ${currentQuestion.correct_answers.join(', ')}`;
+    }
+    document.getElementById("correct-answer").innerText = correctAnswersText;
+}
 
 function loadNextQuestion() {
-    loadQuestion();  // 새로운 문제 로드
-    const submitButton = document.getElementById("submit-answer");
-    submitButton.disabled = false;  // 정답 제출 버튼 다시 활성화
-    submitButton.style.display = 'inline-block';  // 정답 제출 버튼 표시
-    const nextButton = document.getElementById("next-question");
-    nextButton.style.display = 'none';  // 다음 문제 버튼 숨기기
-    document.getElementById("result").innerText = '';  // 결과 초기화
-    document.getElementById("correct-answer").innerText = '';  // 정답 초기화
+    loadQuestion();
 }
 
-
-// Reset quiz to start from the first question
+// 퀴즈 리셋 함수
 function resetQuiz() {
-    usedQuestions = [];  // Clear used questions
-    loadQuestion();  // Start with the first question again
-    document.getElementById("completion-message").innerText = '';  // Clear the completion message
-    document.getElementById("submit-answer").style.display = 'inline-block';  // Show the submit button for the first question
-    document.getElementById("restart-quiz").style.display = 'none';  // Hide the restart button initially
+    usedQuestions = [];
+    loadQuestion();
+    document.getElementById("completion-message").innerText = '';
+    document.getElementById("submit-answer").style.display = 'inline-block';
+    document.getElementById("restart-quiz").style.display = 'none';
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
