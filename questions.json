@@ -301,7 +301,7 @@
       "question_text": "표시된 부분에 해당되는 치아면을 쓰시오.",
       "answer_type": "multiple_short",
       "correct_answers": ["근심면", "원심면", "순면", "설면"],
-      "image": "./images/3-28.png"
+      "image": "./static/images/3-28.png"
     },
     {
       "id": "3-32~35",
