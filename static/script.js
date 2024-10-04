@@ -179,13 +179,9 @@ function submitAnswer() {
     // 정답 체크 로직
     let correct = false;
     if (currentAnswerType === 'short' || currentAnswerType === 'long') {
-        correct = currentQuestion.correct_answers.some(answer => 
-            answer.trim().toLowerCase() === userAnswer.trim().toLowerCase()
-        );
+        correct = currentQuestion.correct_answers.some(answer => answer.trim().toLowerCase() === userAnswer.trim().toLowerCase());
     } else if (currentAnswerType === 'multiple_short') {
-        correct = JSON.stringify(userAnswer) === JSON.stringify(
-            currentQuestion.correct_answers.map(ans => ans.trim().toLowerCase())
-        );
+        correct = JSON.stringify(userAnswer) === JSON.stringify(currentQuestion.correct_answers.map(ans => ans.trim().toLowerCase()));
     } else if (currentAnswerType === 'multiple_choice' || currentAnswerType === 'single_choice') {
         correct = JSON.stringify(userAnswer.sort()) === JSON.stringify(currentQuestion.correct_answers.sort());
     }
@@ -197,18 +193,16 @@ function submitAnswer() {
     if (!correct && (currentAnswerType === 'multiple_choice' || currentAnswerType === 'single_choice')) {
         const correctAnswersText = `정답: ${currentQuestion.correct_answers.map(index => currentQuestion.options[index]).join(', ')}`;
         document.getElementById("correct-answer").innerText = correctAnswersText;
-    }
-
-    // 틀린 경우 주관식의 경우 correct_answers 내용을 출력
-    else if (!correct && (currentAnswerType === 'multiple_short' || currentAnswerType === 'short' || currentAnswerType === 'long')) {
+    } else if (!correct && (currentAnswerType === 'multiple_short' || currentAnswerType === 'short' || currentAnswerType === 'long')) {
         const correctAnswersText = `정답: ${currentQuestion.correct_answers.join(', ')}`;
         document.getElementById("correct-answer").innerText = correctAnswersText;
     }
 
     // '다음 문제' 버튼 표시
     const nextButton = document.getElementById("next-question");
-    nextButton.style.display = 'inline-block';  // 다음 문제 버튼 표시
+    nextButton.style.display = 'inline-block';  // 항상 다음 문제 버튼을 표시
 }
+
 
 function loadNextQuestion() {
     loadQuestion();  // 새로운 문제 로드
