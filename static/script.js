@@ -26,6 +26,14 @@ function createQuestionDropdown() {
         option.innerText = `문제 ${question.id}`;
         dropdown.appendChild(option);
     });
+
+    // 드롭다운에서 문제 선택 시 발생하는 이벤트 처리
+    dropdown.addEventListener('change', function () {
+        if (this.value) {
+            loadSpecificQuestion(this.value);
+            resetUIForNewQuestion(); // 드롭다운에서 문제를 전환할 때 UI 리셋
+        }
+    });
 }
 
 // 특정 문제 ID를 로드하는 함수
@@ -34,7 +42,6 @@ function loadSpecificQuestion(questionId) {
 
     currentQuestion = allQuestions.find(q => q.id === questionId);
     if (currentQuestion) {
-        resetUIForNewQuestion();
         displayQuestion(currentQuestion);
     }
 }
@@ -55,6 +62,7 @@ function loadQuestion() {
 
     usedQuestions.push(randomQuestion.id);
     loadSpecificQuestion(randomQuestion.id);
+    resetUIForNewQuestion(); // UI 리셋
 }
 
 // UI를 초기화하는 함수 (중복 제거)
@@ -103,7 +111,7 @@ function displayQuestion(data) {
         createSingleChoiceFields(answerArea, data.options);
     }
 
-    resetUIForNewQuestion();
+    resetUIForNewQuestion(); // 문제 표시 후 UI 리셋
 }
 
 // 서술형 또는 긴 답변 필드를 생성하는 함수
