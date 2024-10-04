@@ -195,6 +195,11 @@ function submitAnswer() {
         document.getElementById("correct-answer").innerText = correctAnswersText;
     }
 
+    else if (!correct && (currentAnswerType === 'multiple_short' || currentAnswerType === 'short' || currentAnswerType === 'long')) {
+        const correctAnswersText = `정답: ${currentQuestion.correct_answers.join(', ')}`;
+        document.getElementById("correct-answer").innerText = correctAnswersText;
+    }
+
     // '다음 문제' 버튼 표시
     const nextButton = document.getElementById("next-question");
     nextButton.style.display = 'inline-block';  // 다음 문제 버튼 표시
