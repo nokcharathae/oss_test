@@ -156,7 +156,7 @@ function displayQuestion(data) {
 
 function submitAnswer() {
     const submitButton = document.getElementById("submit-answer");
-    submitButton.style.display = 'none';  // 정답 제출 후 숨기기
+    submitButton.disabled = true;  // 정답 제출 후 비활성화
 
     let userAnswer;
 
@@ -189,11 +189,9 @@ function submitAnswer() {
 
     // 틀린 경우 correct_answers의 인덱스를 기반으로 options 값 출력
     if (!correct && (currentAnswerType === 'multiple_choice' || currentAnswerType === 'single_choice')) {
-        // correct_answers는 인덱스 값을 저장하고 있으므로 그 인덱스를 사용해 options에서 정답 텍스트 가져오기
         const correctAnswersText = `정답: ${currentQuestion.correct_answers.map(index => currentQuestion.options[index]).join(', ')}`;
         document.getElementById("correct-answer").innerText = correctAnswersText;
     }
-
 
     // '다음 문제' 버튼 표시
     const nextButton = document.getElementById("next-question");
@@ -203,13 +201,12 @@ function submitAnswer() {
 function loadNextQuestion() {
     loadQuestion();  // 새로운 문제를 로드
     const submitButton = document.getElementById("submit-answer");
-    submitButton.style.display = 'inline-block';  // 정답 제출 버튼 다시 보이기
+    submitButton.disabled = false;  // 정답 제출 버튼 다시 활성화
     const nextButton = document.getElementById("next-question");
     nextButton.style.display = 'none';  // 다음 문제 버튼 숨기기
     document.getElementById("result").innerText = '';  // 결과 초기화
     document.getElementById("correct-answer").innerText = '';  // 정답 초기화
 }
-
 
 // Reset quiz to start from the first question
 function resetQuiz() {
