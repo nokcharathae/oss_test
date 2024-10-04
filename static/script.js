@@ -211,7 +211,6 @@ function loadNextQuestion() {
 }
 
 
-
 // Reset quiz to start from the first question
 function resetQuiz() {
     usedQuestions = [];  // Clear used questions
