@@ -155,9 +155,8 @@ function displayQuestion(data) {
 }
 
 function submitAnswer() {
-    // 버튼을 숨김
     const submitButton = document.getElementById("submit-answer");
-    submitButton.style.display = 'none';
+    submitButton.style.display = 'none';  // 정답 제출 후 숨기기
 
     let userAnswer;
 
@@ -174,7 +173,7 @@ function submitAnswer() {
         userAnswer = selected ? parseInt(selected.value) : null;
     }
 
-    // 정답 체크
+    // 정답 체크 로직 추가
     let correct = false;
     if (currentAnswerType === 'short' || currentAnswerType === 'long') {
         correct = currentQuestion.correct_answers.some(answer => answer.trim().toLowerCase() === userAnswer.trim().toLowerCase());
@@ -193,18 +192,19 @@ function submitAnswer() {
     }
 
     const nextButton = document.getElementById("next-question");
-    nextButton.style.display = 'inline-block';
-    submitButton.style.display = 'none';  // Hide submit button after answer submission
+    nextButton.style.display = 'inline-block';  // 다음 문제 버튼 표시
 }
+
 
 // '다음 문제' 버튼을 눌렀을 때 문제를 로드하는 함수
 function loadNextQuestion() {
-    loadQuestion(); // 새로운 문제 로드
+    loadQuestion();  // 새로운 문제 로드
     document.getElementById("submit-answer").style.display = 'inline-block';  // 정답 제출 버튼 다시 표시
     document.getElementById("next-question").style.display = 'none';  // 다음 문제 버튼 숨기기
     document.getElementById("result").innerText = '';  // 이전 문제의 결과 텍스트 제거
     document.getElementById("correct-answer").innerText = '';  // 이전 문제의 정답 텍스트 제거
 }
+
 
 // Reset quiz to start from the first question
 function resetQuiz() {
