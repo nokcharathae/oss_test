@@ -202,11 +202,13 @@ function loadNextQuestion() {
     loadQuestion();  // 새로운 문제를 로드
     const submitButton = document.getElementById("submit-answer");
     submitButton.disabled = false;  // 정답 제출 버튼 다시 활성화
+    submitButton.style.display = 'inline-block'; // 혹시라도 보이지 않는 경우를 대비해
     const nextButton = document.getElementById("next-question");
     nextButton.style.display = 'none';  // 다음 문제 버튼 숨기기
     document.getElementById("result").innerText = '';  // 결과 초기화
     document.getElementById("correct-answer").innerText = '';  // 정답 초기화
 }
+
 
 // Reset quiz to start from the first question
 function resetQuiz() {
