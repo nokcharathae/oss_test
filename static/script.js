@@ -86,21 +86,38 @@ function displayQuestion(data) {
     if (data.answer_type === 'multiple_choice') {
         questionText += " (중복 선택)";
     }
+
     document.getElementById("question-text").innerText = questionText;
+
+    // 추가된 정보 (question_info) 처리
+    let infoArea = document.getElementById("question-info");
+    if (data.question_info && data.question_info.length > 0) {
+        infoArea.innerHTML = '';  // 기존 내용을 초기화
+        data.question_info.forEach(info => {
+            let listItem = document.createElement("li");
+            listItem.textContent = info;
+            infoArea.appendChild(listItem);
+        });
+        infoArea.style.display = 'block';  // 정보가 있을 때만 표시
+    } else {
+        infoArea.style.display = 'none';  // 정보가 없을 때는 숨김
+    }
 
     let answerArea = document.getElementById("answer-area");
     answerArea.innerHTML = '';  // 기존 답변 영역 초기화
     currentAnswerType = data.answer_type;
 
+    // 이미지가 있는 경우 이미지 추가
     if (data.image) {
         let img = document.createElement("img");
-        img.src = data.image;
+        img.src = data.image;  // 이미지 경로 설정
         img.alt = "문제 이미지";
         img.style.maxWidth = "100%";
         img.style.marginBottom = "20px";
         answerArea.appendChild(img);
     }
 
+    // 서술형, 객관식 등의 질문 처리
     if (data.answer_type === 'short' || data.answer_type === 'long') {
         createShortOrLongAnswerField(answerArea);
     } else if (data.answer_type === 'multiple_short') {
@@ -113,6 +130,7 @@ function displayQuestion(data) {
 
     resetUIForNewQuestion(); // 문제 표시 후 UI 리셋
 }
+
 
 // 서술형 또는 긴 답변 필드를 생성하는 함수
 function createShortOrLongAnswerField(answerArea) {
