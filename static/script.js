@@ -196,20 +196,19 @@ function submitAnswer() {
 
     // '다음 문제' 버튼 표시
     const nextButton = document.getElementById("next-question");
-    nextButton.style.display = 'inline-block';
-    submitButton.style.display = 'none';  // Hide submit button after answer submission
+    nextButton.style.display = 'inline-block';  // 다음 문제 버튼 표시
 }
 
-
-
-// '다음 문제' 버튼을 눌렀을 때 문제를 로드하는 함수
 function loadNextQuestion() {
-    loadQuestion();  // 새로운 문제 로드
-    document.getElementById("submit-answer").style.display = 'inline-block';  // 정답 제출 버튼 다시 표시
-    document.getElementById("next-question").style.display = 'none';  // 다음 문제 버튼 숨기기
-    document.getElementById("result").innerText = '';  // 이전 문제의 결과 텍스트 제거
-    document.getElementById("correct-answer").innerText = '';  // 이전 문제의 정답 텍스트 제거
+    loadQuestion();  // 새로운 문제를 로드
+    const submitButton = document.getElementById("submit-answer");
+    submitButton.style.display = 'inline-block';  // 정답 제출 버튼 다시 보이기
+    const nextButton = document.getElementById("next-question");
+    nextButton.style.display = 'none';  // 다음 문제 버튼 숨기기
+    document.getElementById("result").innerText = '';  // 결과 초기화
+    document.getElementById("correct-answer").innerText = '';  // 정답 초기화
 }
+
 
 
 // Reset quiz to start from the first question
