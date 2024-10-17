@@ -1,544 +1,172 @@
 {
   "questions": [
     {
-      "id": "8-1",
-      "question_text": "다음 그림 중 상악동이라 불리는 Maxillary Sinus는 어디인가?",
+      "id": "투명 교정장치의 이해 1",
+      "question_text": "잘 보이지 않는 플라스틱 소재의 맞춤형 교저장치를 순차적으로 작용하여 치아를 이동하는 교정치료 방법은?",
+      "answer_type": "short",
+      "correct_answers": ["투명교정"]
+    },
+    {
+      "id": "투명 교정장치의 이해 2",
+      "question_text": "교정치료를 함으로써 개선되는 점이 아닌 것을 고르세요.",
       "answer_type": "single_choice",
-      "options": ["1", "2", "3", "4"],
+      "options": ["구강기능 향상", "충치 및 치주질환 예방", "외모 개선", "식습관 개선"],
       "correct_answers": [3]
     },
     {
-      "id": "8-2",
-      "question_text": "부비동 중 가장 큰 구멍이며, 코 옆의 광대뼈 안의 빈 공간을 무엇이라 부르는가?",
+      "id": "투명 교정장치의 이해 3",
+      "question_text": "다음은 치아 이동의 원리를 보여주고 있다 가로 알맞은 단어는 무엇인가요?",
       "answer_type": "short",
-      "correct_answers": ["상악동"]
+      "correct_answers": ["골 흡수"],
+      "image": "./static/images/투명_3.jpg"
     },
     {
-      "id": "8-3",
-      "question_text": "Membrane(상악동 막)을 올려주고 확보된 공간에 자가이식 뼈나 인공뼈를 넣어 임플란트 시술에 적합한 치조골 두께가 되도록 만들어 주는 시술은 무엇인가?",
-      "answer_type": "single_choice",
-      "options": ["Crestal Approch", ":ateral Approch", "Sinus Lift", "Bone Graft", "Onlay Graft"],
-      "correct_answers": [2]
-    },
-    {
-      "id": "8-4",
-      "question_text": "Sinus Lift 시술법 중 치아 머리가 있는 부분에서 수직적으로 접근하는 거상법은 무엇인가?",
-      "answer_type": "single_choice",
-      "options": ["Crestal Approach", ":ateral Approach", "Sinus Lift", "Bone Graft", "Onlay Graft"],
-      "correct_answers": [2]
-    },
-    {
-      "id": "8-5",
-      "question_text": "Sinus Lift 시술법 중 볼쪽에서 시야를 확보한 상태에서 Membrane을 거상하는 방법은 무엇인가?",
-      "answer_type": "single_choice",
-      "options": ["Crestal Approach", ":ateral Approach", "Sinus Lift", "Bone Graft", "Onlay Graft"],
-      "correct_answers": [2]
-    },
-    {
-      "id": "8-6",
-      "question_text": "Lateral Approach 시술과 비교하여 Crestal Approach 시술의 장점을 고르시오.",
-      "answer_type": "single_choice",
-      "options": ["시술난이도가 쉽다", "골이식량이 많다", "시야확보가 용이하다", "수술부위가 크다"],
-      "correct_answers": [2]
-    },
-    {
-      "id": "8-7",
-      "question_text": "Lateral Approach 시술과 비교하여 Crestal Approach 시술의 장점을 고르시오.",
+      "id": "투명 교정장치의 이해 4",
+      "question_text": "다음 설명하는 내용은 무엇인가요?",
       "question_info": [
-        "Crestal Approach는 시술의 난이도가 비교적 ⓐ 쉽고, ⓑ 어렵고 수술부위가 크지 않아 회복이 ⓒ 빠르다, ⓓ 느리다."
+        "상하악 맞물림의 상태가 정상적인 위치를 벗어나 심미적, 기능적으로 문제가 되는 교합관계"
       ],
-      "answer_type": "single_choice",
-      "options": ["ⓐ, ⓒ", "ⓐ, ⓓ", "ⓑ, ⓒ", "ⓑ, ⓓ"],
-      "correct_answers": [0]
-    },
-    {
-      "id": "8-8",
-      "question_text": "이상적인 Sinus Lift KIT가 가져야 하는 요구 조건을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "Sinus Floor와 Membrane 모두 잘 관통해야 한다.",
-        "Membrane을 안전하게 분리시켜야 한다.",
-        "Membrane을 좁고 볼록하게 분리시켜야 한다.",
-        "시술 과정이 길고 복잡해야 한다."
-      ],
-      "correct_answers": [1,4]
-    },
-    {
-      "id": "8-9",
-      "question_text": "Lateral Approach 시술의 장점을 고르시오.",
-      "answer_type": "single_choice",
-      "options": ["시술난이도가 쉽다", "잔존골 높이가 1~4mm에서도 시술이 가능하다.", "수술 부위가 크지 않아 회복이 빠르다.", "Blind Technique"],
-      "correct_answers": [1]
-    },
-    {
-      "id": "8-10",
-      "question_text": "Sinus Lift 시술에 대하여 간략히 서술하시오.",
       "answer_type": "short",
-      "correct_answers": ["Membrane 막을 거상하여 확보된 공간에 뼈이식재를 넣어 임플란트에 적합한 치조골 두께가 되도록 만들어 주는 시술"]
+      "correct_answers": ["부정교합"]
     },
     {
-      "id": "8-11",
-      "question_text": "Conical Bone을 형성하면서 수압거상을 이용해 Membrane을 안전하게 거상하는 상악동 시술 KIT는 무엇인가?",
-      "answer_type": "single_choice",
-      "options": ["Sinus Lift KIT", "Osteotome KIT", "CAS KIT", "LAS KIT", "ESSET KIT"],
-      "correct_answers": [2]
-    },
-    {
-      "id": "8-12",
-      "question_text": "Lateral에 Window를 형성하여 Membrane을 안전하게 거상하는 시술 KIT는 무엇인가?",
-      "answer_type": "single_choice",
-      "options": ["Sinus Lift KIT", "Osteotome KIT", "CAS KIT", "LAS KIT", "ESSET KIT"],
-      "correct_answers": [3]
-    },
-    {
-      "id": "8-13",
-      "question_text": "CAS KIT는 (  ) Approach용 KIT 이고 LAS KIT는 (  ) Approach용 KIT 이다.",
-      "answer_type": "multiple_short",
-      "correct_answers": ["Crestal", "Lateral"]
-    },
-    {
-      "id": "8-14",
-      "question_text": "상악동 거상용 KIT로 CAS KIT가 개발되기 전에 사용되던 1세대 KIT는?",
+      "id": "투명 교정장치의 이해 5",
+      "question_text": "상하악 교합관계에 대한 Angle의 분류법에서 기준이 되는 치아는 무엇인가요?",
       "answer_type": "short",
-      "correct_answers": ["Osteotome KIT"]
+      "correct_answers": ["상악 제1대구치"]
     },
     {
-      "id": "8-16",
-      "question_text": "다음 그림에 나와있는 제품은 무엇인가?",
+      "id": "투명 교정장치의 이해 6",
+      "question_text": "Angle의 분류 중 다음의 그림이 해당하는 것은 무엇인가요?",
       "answer_type": "single_choice",
-      "options": ["Dome Drill", "Core Drill", "CAS Drill", "Side Wall Drill", "Guide Drell"],
-      "correct_answers": [2],
-         "image": "./static/images/8-16.jpg"
+      "options": ["Class I", "Class II", "Class III", "Class IV"],
+      "correct_answers": [1],
+      "image": "./static/images/투명_6.jpg"
     },
     {
-      "id": "8-17",
-      "question_text": "다음 그림에 나와있는 제품의 특징으로 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "Sharp한 Drill 선단부를 가진 CAS Drill로 Membrane 손상 없이 절삭 가능하다",
-        "Drill Stopper 장착으로 Drilling 길이 조절이 가능하다",
-        "Initial Drill로도 사용한다.",
-        "절삭날고 절삭날 사이 Bone Chip 이 형성된다",
-        "충전된 Bone을 측벽으로 넓게 퍼트리는 기능을 한다"
-      ],
-      "correct_answers": [1,3],
-         "image": "./static/images/8-16.jpg"
-    },
-    {
-      "id": "8-18",
-      "question_text": "CAS KIT의 기능 별 특징이 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "Round한 Drill 선단부를 가진 CAS Drill로 Membrane 손상 없이 절삭 가능하다",
-        "Drill Stopper 장착으로 Drilling 길이 조절이 가능하다",
-        "Hydraulic Lifter Set로 공기 압력 거상이 가능하다",
-        "Depth Gauge로 Membrane이 천공되었는지 확인 가능하다",
-        "Bone Condenser는 충진된 Bone을 측벽으로 넓게 퍼트리는 기능을 한다"
-      ],
-      "correct_answers": [0,1,3]
-    },
-    {
-      "id": "8-19",
-      "question_text": "CAS Drill의 설명으로 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "Drilling 시 Conical Bone Lid를 형성하여 Membrane과의 직접 접촉을 최소화한다",
-        "Drill 선단부가 Round한 형상으로 Sinus Floor가 Inclined 또는 Septum 해도 Membrane 손상없이 Drilling 가능하다",
-        "절삭날과 절삭날 사이 Bone Chip이 형성된다",
-        "Membrane 손상 예방을 위해 50rpm 이하로 Drilling 해야 한다"
-      ],
-      "correct_answers": [0,1,2]
-    },
-    {
-      "id": "8-20",
-      "question_text": "Hydarulic Lifter 사용 방법 중 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "3cc 용량의 Syringe를 권장한다",
-        "식염수 0.5cc 주입 후 넣고 빼고를 반복하면서 점진적으로 주입량을 늘린다",
-        "식염수를 한 번에 3cc 주입하여 Membrane을 거상한다",
-        "안전한 Membrane 거상을 위해 매우 천천히 식염수를 주입한다"
-      ],
-      "correct_answers": [0,1,3]
-    },
-    {
-      "id": "8-21",
-      "question_text": "다음 그림에 나와있는 제품이 구성되어 있는 KIT는?",
+      "id": "투명 교정장치의 이해 7",
+      "question_text": "Angle의 분류 중 다음의 그림이 해당하는 것은 무엇인가요?",
       "answer_type": "single_choice",
-      "options": ["LAS KIT", "CAS KIT","ESSET KIT", "ESR KIT", "123 KIT"],
+      "options": ["Class I", "Class II", "Class III", "Class IV"],
       "correct_answers": [0],
-         "image": "./static/images/8-21.jpg"
+      "image": "./static/images/투명_7.jpg"
     },
     {
-      "id": "8-22",
-      "question_text": "다음 그림에 나와있는 제품은 무엇인가?",
+      "id": "투명 교정장치의 이해 8",
+      "question_text": "Angle의 분류 중 다음의 그림이 해당하는 것은 무엇인가요?",
       "answer_type": "single_choice",
-      "options": ["Dome Drill", "Core Drill", "CAS Drill", "Side Wall Drill", "Guide Drell"],
-      "correct_answers": [3],
-         "image": "./static/images/8-22.jpg"
+      "options": ["Class I", "Class II", "Class III", "Class IV"],
+      "correct_answers": [2],
+      "image": "./static/images/투명_8.jpg"
     },
     {
-      "id": "8-23",
-      "question_text": "다음 그림에 나와있는 제품의 특징으로 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "Sharp한 Drill 선단부를 가진 CAS Drill로 Membrane 손상 없이 절삭 가능하다.",
-        "Lateral Window를 형성할 때 사용하는 기구이다.",
-        "CAS KIT내 Stopper와 체결하여 사용한다.",
-        "Lateral Window를 확장할 때 사용하는 기구이다."
-      ],
-      "correct_answers": [2,3],
-      "image": "./static/images/8-22.jpg"
-    },
-    {
-      "id": "8-24",
-      "question_text": "다음 그림에 나와있는 제품은 무엇인가?",
+      "id": "투명 교정장치의 이해 9",
+      "question_text": "Angle의 분류 중 상하악 치열궁은 정상적인 근원심 관계에 있으나 다른 치아에 이상이 있는 부정교합은 무엇인가요?",
       "answer_type": "single_choice",
-      "options": ["Dome Drill", "Core Drill", "CAS Drill", "Side Wall Drill", "Guide Drell"],
-      "correct_answers": [1],
-      "image": "./static/images/8-24.jpg"
-    },
-    {
-      "id": "8-25",
-      "question_text": "다음 그림에 나와있는 제품의 특징으로 맞는 것을 고르시오.",
-      "answer_type": "single_choice",
-      "options": [
-        "Crestal Approach에 사용하는 기구이다.",
-        "Lateral Window를 형성할 때 사용하는 기구이다.",
-        "Bone을 삭제하면서 측면으로 확장한다.",
-        "Lateral Window를 확장할 때 사용하는 기구이다."
-      ],
-      "correct_answers": [1],
-      "image": "./static/images/8-24.jpg"
-    },
-    {
-      "id": "8-26",
-      "question_text": "임플란트 식립에 필요한 골량을 확보하기 위하여 기존의 Malletting 방법이 아닌 Engine용 Tool을 이용하여 쉽고 편리하게 Ridge Split & Expansion 하는 KIT는 무엇인가?",
-      "answer_type": "single_choice",
-      "options": ["CAS KIT","LAS KIT", "Ridge Split KIT", "Bone Spreader KIT", "ESSET KIT"],
-      "correct_answers": [4]
-    },
-    {
-      "id": "8-27",
-      "question_text": "EESET KIT의 특징이 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "Malletting하여 Ridge를 넓게 벌려준다.",
-        "Sawing을 이용하여 좁은 Ridge를 쉡제 정리할 수 있다.",
-        "Expansion Drill을 이용하여 Buccal Plate 파절을 최소화한다.",
-        "Bone 탄성 및 주위골에 의한 고정력을 증대시키다."
-      ],
-      "correct_answers": [1,2,3]
-    },
-    {
-      "id": "8-28",
-      "question_text": "다음 그림에 나와있는 제품은 무엇인가?",
-      "answer_type": "single_choice",
-      "options": ["Dome Drill", "Expation Drill", "Crest Drill", "Twist Drill", "Saw Drell"],
-      "correct_answers": [1],
-      "image": "./static/images/8-28.jpg"
-    },
-    {
-      "id": "8-29",
-      "question_text": "다음 그림에 나와있는 제품의 용도를 작성하시오.",
-      "answer_type": "short",
-      "correct_answers": ["Bone을 확장할 때 사용"],
-      "image": "./static/images/8-28.jpg"
-    },
-    {
-      "id": "8-30",
-      "question_text": "다음 그림은 ESSET KIT의 시술법을 간략히 표현한 것이다. 그림을 보고 올바른 순서를 쓰시오.",
-      "answer_type": "short",
-      "correct_answers": ["2, 1, 4, 5, 3, 6"],
-      "image": "./static/images/8-30.jpg"
-    },
-    {
-      "id": "9-1",
-      "question_text": "골 유도 재생술 'GBR'의 Full Name을 작성하시오.",
-      "answer_type": "short",
-      "correct_answers": ["Guided Bone Regeneration"]
-    },
-    {
-      "id": "9-2",
-      "question_text": "골 유도 재생술의 정의에 대해 서술하시오. (시험에 나올 듯)",
-      "answer_type": "short",
-      "correct_answers": ["GBR은 결손부에 차폐막을 이용해 공간을 확보하고 골세포 이외의 세포가 들어오지 못하도록 차단하여 골재생을 도모하는 술식"]
-    },
-    {
-      "id": "9-3",
-      "question_text": "GBR 시술에 필요한 재료로 맞는 것을 모두 고르세요.",
-      "answer_type": "multiple_choice",
-      "options": ["골이식재", "콜라겐", "Implant", "Abutment", "멤브레인"],
-      "correct_answers": [0,4]
-    },
-    {
-      "id": "9-4",
-      "question_text": "'골이 결손된 부위에 골이식제를 이식하여 그 부위를 복원시키는 시술'이 무엇인가?",
-      "answer_type": "single_choice",
-      "options": ["상악동 거상술", "임플란트 식립", "골이식술", "연조직 재생술"],
-      "correct_answers": [2]
-    },
-    {
-      "id": "9-5",
-      "question_text": "다음 그림은 '골이식 과정'을 나타내고 있다. 빈 칸에 알맞은 보기를 고르시오.",
-      "question_info": [
-        "① 골 제거",
-        "② 수복할 뼈의 형태 계획",
-        "③ 골 이식",
-        "④ 차폐막 적용",
-        "⑤ 차폐막 제거"
-      ],
-      "answer_type": "multiple_short",
-      "correct_answers": ["2", "3", "4"],
-      "image": "./static/images/9-5.png"
-    },
-    {
-      "id": "9-8",
-      "question_text": "자가골 이식재의 특징으로 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "인체 거부 반응이 없다", 
-        "전염성 감염 위험이 높다", 
-        "골 채취량에 한계가 없다", 
-        "골 재생 능력이 뛰어나다"],
-      "correct_answers": [0,3]
-    },
-    {
-      "id": "9-9",
-      "question_text": "자가골 이식재 채취 기구의 명칭은 무엇인가?",
-      "answer_type": "short",
-      "correct_answers": ["Autobone Collecter"]
-    },
-    {
-      "id": "9-10",
-      "question_text": "동종골 이식재의 특징으로 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "골 재생이 느리다", 
-        "자가골에 비해 사용이 쉽다", 
-        "기증자 건수에 한계가 있다", 
-        "임상 데이터가 부족하다."],
-      "correct_answers": [1,2]
-    },
-    {
-      "id": "9-11",
-      "question_text": "이종골 이식재의 특징으로 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "이식재의 흡수 속도가 안정적이다", 
-        "골 재생 속도가 가장 빠르다", 
-        "공간 유지력이 뛰어나다", 
-        "원재료 질병에 대한 불안이 전혀 없다"],
-      "correct_answers": [0,2]
-    },
-    {
-      "id": "9-12",
-      "question_text": "합성골 이식재의 특징으로 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "원재료의 안정성에 대한 불안감이 있다.", 
-        "가격이 저렴하다", 
-        "이식재 중 장기 임상 데이터가 가장 풍부하다", 
-        "골 재생 속도가 느리다"],
-      "correct_answers": [1,3]
-    },
-    {
-      "id": "9-13",
-      "question_text": "rhBMP 이식재의 특징으로 맞는 것을 고르시오.",
-      "answer_type": "single_choice",
-      "options": [
-        "골 채취량에 한계가 있다.", 
-        "골 재생이 빠르다.", 
-        "가격이 저렴하다", 
-        "별도의 채취 기구가 필요하다"],
-      "correct_answers": [1]
-    },
-    {
-      "id": "9-14",
-      "question_text": "골이식재의 형태별 특징으로 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "Powder : 가장 많이 사용하는 골이식재의 형태이다.", 
-        "Chip : 볼륨 유지에 탁월하다.", 
-        "Block : 물에 풀어 으깨서 사용한다.", 
-        "Gel : 모양을 변경시킬 수 없다."],
-      "correct_answers": [0,1]
-    },
-    {
-      "id": "9-15",
-      "question_text": "다음 골이식재의 특징을 가지는 제품명은 무엇인가?",
-      "question_info": [
-        "기증을 통해 제작된다.",
-        "골 재생이 빠르다",
-        "X-ray에 뚜렷하게 보이지 않는다"
-      ],
-      "answer_type": "single_choice",
-      "options": ["A-Oss", "Q-Oss+", "O-BMP", "SureOss"],
-      "correct_answers": [3]
-    },
-    {
-      "id": "9-16",
-      "question_text": "다음 골이식재의 특징을 가지는 제품명은 무엇인가?",
-      "question_info": [
-        "동물의 뼈를 이용해 생산한다.",
-        "골 흡수 속도가 안정적이다.",
-        "골 밀도가 높아 x-ray에 잘 보인다."
-      ],
-      "answer_type": "single_choice",
-      "options": ["A-Oss", "Q-Oss+", "O-BMP", "SureOss"],
+      "options": ["Class I", "Class II", "Class III", "Class IV"],
       "correct_answers": [0]
     },
     {
-      "id": "9-17",
-      "question_text": "다음 골이식재의 특징을 가지는 제품명은 무엇인가?",
-      "question_info": [
-        "인공으로 합성하여 골이식재를 만든다.",
-        "골이식재 중 가격이 저렴한 편이다",
-        "장기적인 임상 데이터가 비교적 부족하다"
-      ],
+      "id": "투명 교정장치의 이해 10",
+      "question_text": "Angle의 분류 중 하악 제1대구치의 선이 상악보다 더 앞으로 나와있는 경우는 무엇인가요?",
       "answer_type": "single_choice",
-      "options": ["A-Oss", "Q-Oss+", "O-BMP", "SureOss"],
+      "options": ["Class I", "Class II", "Class III", "Class IV"],
+      "correct_answers": [2]
+    },
+    {
+      "id": "투명 교정장치의 이해 11",
+      "question_text": "Angle의 분류 중 상악 제1대구치의 선이 하악보다 더 앞으로 나와있는 경우는 무엇인가요?",
+      "answer_type": "single_choice",
+      "options": ["Class I", "Class II", "Class III", "Class IV"],
       "correct_answers": [1]
     },
     {
-      "id": "9-18",
-      "question_text": "골이식재의 제품명과 특징에 대한 설명으로 올바른 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "A-Oss는 Bovine 골을 사용한 오스템의 대표적인 이종골이다", 
-        "SureOss는 HA&β-TCP의 성분을 이용한 합성골이다.", 
-        "점성형을 가진 유전자 재조합 골형성 단백질의 제품명은 Q-Oss+ 이다.", 
-        "Canoss, Osteoss는 동종골에 해당되는 제품이다."],
-      "correct_answers": [0,3]
+      "id": "투명 교정장치의 이해 12",
+      "question_text": "전치부 3-3 까지를 무엇이라고 하나요? (  ) teeth",
+      "answer_type": "short",
+      "correct_answers": ["Anterior"],
+      "image": "./static/images/투명_12.jpg"
     },
     {
-      "id": "9-19",
-      "question_text": "골이식재 종류와 제품명이 맞게 연결된 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "이종골 : A-Oss", 
-        "합성골 : Q-Oss+", 
-        "동종골 : SureOss", 
-        "rhBMP : Q-Oss"],
-      "correct_answers": [0,1,2]
+      "id": "투명 교정장치의 이해 13",
+      "question_text": "구치부 4-8 까지를 무엇이라고 하나요? (  ) teeth",
+      "answer_type": "short",
+      "correct_answers": ["Posterior"],
+      "image": "./static/images/투명_12.jpg"
     },
     {
-      "id": "9-20",
-      "question_text": "멤브레인의 역할로 옳은 것을 고르시오.",
-      "answer_type": "single_choice",
-      "options": [
-        "멤브레인은 연조직 세포가 활성화되는 환경을 조성한다.", 
-        "멤브레인은 골 결손부에 골세포 외의 다른 세포들이 들어오도록 공간을 개방한다.", 
-        "멤브레인은 골 결손부에 골세포 이외의 세포가 들어오지 못하도록 차단한다.", 
-        "멤브레인은 뼈 세포가 증식되기 어려운 환경을 조성한다."],
-      "correct_answers": [2]
+      "id": "투명 교정장치의 이해 14",
+      "question_text": "치아를 뒤로(distal) 원심 이동 시키는 것을 무엇이라고 하나요?",
+      "answer_type": "short",
+      "correct_answers": ["distalization"],
+      "image": "./static/images/투명_12.jpg"
     },
     {
-      "id": "9-21",
-      "question_text": "멤브레인의 주요한 기능으로 맞는 것을 모두 고르시오.",
-      "answer_type": "multiple_choice",
-      "options": [
-        "연조직 세포의 증식을 배제한다", 
-        "골 이식재를 유지 시켜준다", 
-        "혈병을 유지시키다", 
-        "골이 재생될 수 있는 공간을 형성한다.",
-        "연조직 세포가 잘 증식할 수 있도록 공간을 유지한다"],
-      "correct_answers": [0,1,2,3]
-    },
-    {
-      "id": "9-22",
-      "question_text": "다음 빈 칸에 알맞은 단어를 쓰시오.",
+      "id": "투명 교정장치의 이해 15~17",
+      "question_text": "다음 그림에 해당하는 것을 고르세요.",
       "answer_type": "multiple_short",
-      "correct_answers": ["비흡수성", "콜라겐"],
-      "image": "./static/images/9-22.png"
+      "correct_answers": ["ㄱ","ㄴ","ㄷ"],
+      "image": "./static/images/투명_15.png"
     },
     {
-      "id": "9-23",
-      "question_text": "콜라겐 멤브레인의 특징으로 맞는 것을 모두 고르시오.",
+      "id": "투명 교정장치의 이해 18",
+      "question_text": "투명교정의 치아 이동을 위해 소재가 갖춰야 할 중요한 요소 2가지를 고르세요.",
       "answer_type": "multiple_choice",
-      "options": [
-        "일정 기간 체내 유지 후 흡수된다", 
-        "가장 사용량이 적은 멤브레인의 종류이다", 
-        "공간 유지 능력이 뛰어나다", 
-        "멤브레인 제거시술이 불필요하다"],
-      "correct_answers": [0,3]
+      "correct_answers": [2,3],
+      "options": ["마모력", "수분력", "복원력", "유지력"]
     },
     {
-      "id": "9-24",
-      "question_text": "비흡수성 멤브레인의 특징으로 맞는 것을 모두 고르시오.",
+      "id": "투명 교정장치의 이해 19",
+      "question_text": "브라켓 치아교정 대비 투명교정의 장점에 해당 되는 것을 모두 고르세요. (3개)",
       "answer_type": "multiple_choice",
+      "correct_answers": [1,2,3],
       "options": [
-        "공간 유지 능력이 없다", 
-        "멤브레인 제거 전까지 그 기능이 유지된다", 
-        "술자의 숙련도에 관계없이 다루기 용이하다", 
-        "멤브레인 노출 시, 감염의 위험이 크다"],
-      "correct_answers": [1,3]
+        "음식을 먹는데 제한이 있다", 
+        "투명한 소재로 눈에 띄지 않아 심미적으로 치료 받을 수 있다", 
+        "구강 위생 관리가 쉽다", 
+        "장기간 내원하지 않아도 치료가 가능하다"]
     },
     {
-      "id": "9-25",
-      "question_text": "티타늄 멤브레인의 특징으로 맞는 것을 모두 고르시오.",
+      "id": "투명 교정장치의 이해 20",
+      "question_text": "투명교정의 원리에 대한 설명 중 옳은 것을 모두 고르세요. (2개)",
       "answer_type": "multiple_choice",
+      "correct_answers": [0,3],
       "options": [
-        "차폐막 기능이 뛰어나다", 
-        "공간 유지 능력이 우수하다.", 
-        "골 결손이 심한 부위에 사용한다", 
-        "넓은 의미의 멤브레인에 속한다"],
-      "correct_answers": [1,2,3]
+        "소재의 복원력이 교정력을 좌우 한다", 
+        "복원력이 클수록 좋다", 
+        "복원력이 작아도 교정치료에 문제 없다", 
+        "적정한 복원력과 장기간 유지력이 중요하다"]
     },
     {
-      "id": "9-26",
-      "question_text": "멤브레인 종류와 특징이 알맞는 것을 모두 고르시오.",
+      "id": "투명 교정장치의 이해 21",
+      "question_text": "투명교정에 대한 설명 중 옳은 것은?",
       "answer_type": "single_choice",
+      "correct_answers": [2],
       "options": [
-        "흡수성 멤브레인 : PTFE 소재를 사용한다", 
-        "흡수성 멤브레인 : 공간 유지 능력이 뛰어나다", 
-        "비흡수성 멤브레인 : 제거 전 까지 기능이 유지된다", 
-        "티타늄 멤브레인 : 일정 기간 체내 유지 후 흡수된다"],
-      "correct_answers": [2]
+        "투명교정은 구치부의 움직임이 잘 이뤄진다", 
+        "투명교정은 일반 브라켓 교정 후 마무리 단계에만 사용하는 장치이다", 
+        "투명교정치료 시 다양한 부가장치를 활용함으로써 치료의 범위가 보다 넓어졌다", 
+        "투명교정치료의 한계는 없다"]
     },
     {
-      "id": "9-27",
-      "question_text": "다음 특징의 멤브레인의 종류를 쓰시오.",
-      "question_info": [
-        "콜라겐 소재를 사용한다.",
-        "시술이 간편하다.",
-        "골 재생을 위한 공간유지에 어려움이 있다."
-      ],
-      "answer_type": "short",
-      "correct_answers": ["흡수성 멤브레인"]
+      "id": "투명 교정장치의 이해 22",
+      "question_text": "투명교정 치료 시 공간을 확보하는 주된 방법은?",
+      "answer_type": "single_choice",
+      "correct_answers": [2],
+      "options": ["확대(Expansion)", "발치(Extraction)", "치간삭제(IPR)"]
     },
     {
-      "id": "9-28",
-      "question_text": "멤브레인 제품명과 특징이 알맞게 연결된 것을 모두 고르시오.",
+      "id": "투명 교정장치의 이해 23",
+      "question_text": "투명교정치료의 주요 적응증에 해당하는 것을 모두 고르세요. (2개)",
       "answer_type": "multiple_choice",
-      "options": [
-        "Cytoplast TXT : 제거 시술이 불필요 하다.", 
-        "OssGuide : 체내에서 일정 기간 유지 후 흡수된다.", 
-        "OssBuilder : 공간 유지 능력이 뛰어나다.", 
-        "Cytoplast RTM : PTFE 소재로 제작된다."],
-      "correct_answers": [1,2]
+      "correct_answers": [1,3],
+      "options": ["cII 발치 case", "Spacing", "악교정 수술 case", "전치부 Crowding"]
     },
     {
-      "id": "9-29",
-      "question_text": "다음 특징의 멤브레인 제품명은?",
-      "question_info": [
-        "장기간 차폐막 기능이 유지된다.",
-        "PTFE 소재를 사용한다.",
-        "공간유지 능력 강화를 위해 Titanium이 들어있다."
-      ],
+      "id": "투명 교정장치의 이해 24",
+      "question_text": "치간삭제 IPR(Interproximal reduction of Enamel)과 동일하게 사용되는 단어는 무엇인가요?",
       "answer_type": "short",
-      "correct_answers": ["Sytoplast Ti"]
-    },
-    {
-      "id": "9-30",
-      "question_text": "다음 특징의 멤브레인 제품명은?",
-      "question_info": [
-        "공간 유지 능력이 뛰어나다.",
-        "세포 차단성이 없다.",
-        "별도로 멤브레인의 모양을 자르거나 구부리지 않아도 된다."
-      ],
-      "answer_type": "short",
-      "correct_answers": ["OssBuilder"]
+      "correct_answers": ["Stripping"]
     }
     
   ]
