@@ -1,6 +1,258 @@
 {
   "questions": [
     {
+        "id": "상부이름 익히기 1",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Rigid Abutment"],
+        "image": "./static/images/상부_1.jpg"
+    },
+    {
+        "id": "상부이름 익히기 2",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Transfer Abutment"],
+        "image": "./static/images/상부_2.jpg"
+    },
+    {
+        "id": "상부이름 익히기 3",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Angled Abutment"],
+        "image": "./static/images/상부_3.jpg"
+    },
+    {
+        "id": "상부이름 익히기 4",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["GoldCast Abutment"],
+        "image": "./static/images/상부_4.jpg"
+    },
+    {
+        "id": "상부이름 익히기 5",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["NP-Cast Abutment"],
+        "image": "./static/images/상부_5.jpg"
+    },
+    {
+        "id": "상부이름 익히기 6",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["FreeForm ST Abutment"],
+        "image": "./static/images/상부_6.jpg"
+    },
+    {
+        "id": "상부이름 익히기 7",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Convertible Abutment"],
+        "image": "./static/images/상부_7.jpg"
+    },
+    {
+        "id": "상부이름 익히기 8",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Multi Abutment"],
+        "image": "./static/images/상부_8.jpg"
+    },
+    {
+        "id": "상부이름 익히기 9",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Multi Angled Abutment"],
+        "image": "./static/images/상부_9.jpg"
+    },
+    {
+        "id": "상부이름 익히기 10",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Stud Abutment"],
+        "image": "./static/images/상부_10.jpg"
+    },
+    {
+        "id": "상부이름 익히기 11",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Locator Abutment"],
+        "image": "./static/images/상부_11.jpg"
+    },
+    {
+        "id": "상부이름 익히기 12",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["OneFit Abutment"],
+        "image": "./static/images/상부_12.jpg"
+    },
+    {
+        "id": "상부이름 익히기 13",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Pre-Milled Abutment"],
+        "image": "./static/images/상부_13.jpg"
+    },
+    {
+        "id": "상부이름 익히기 14",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Link Abutment"],
+        "image": "./static/images/상부_14.jpg"
+    },
+    {
+        "id": "상부이름 익히기 15",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Solid Abutment"],
+        "image": "./static/images/상부_15.jpg"
+    },
+    {
+        "id": "상부이름 익히기 16",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Excellent Solid Abutment"],
+        "image": "./static/images/상부_16.jpg"
+    },
+    {
+        "id": "상부이름 익히기 17",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["ComOcta Abutment"],
+        "image": "./static/images/상부_17.jpg"
+    },
+    {
+        "id": "상부이름 익히기 18",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["ComOcta Angled Abutment"],
+        "image": "./static/images/상부_18.jpg"
+    },
+    {
+        "id": "상부이름 익히기 19",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["ComOcta Gold Abutment"],
+        "image": "./static/images/상부_19.jpg"
+    },
+    {
+        "id": "상부이름 익히기 20",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["ComOcta NP-Cast Abutment"],
+        "image": "./static/images/상부_20.jpg"
+    },
+    {
+        "id": "상부이름 익히기 21",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["ComOcta Plus Abutment"],
+        "image": "./static/images/상부_21.jpg"
+    },
+    {
+        "id": "상부이름 익히기 22",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Octa Abutment"],
+        "image": "./static/images/상부_22.jpg"
+    },
+    {
+        "id": "상부이름 익히기 23",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["O-ring Abutment"],
+        "image": "./static/images/상부_23.jpg"
+    },
+    {
+        "id": "상부이름 익히기 24",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Locator Abutment"],
+        "image": "./static/images/상부_24.jpg"
+    },
+    {
+        "id": "상부이름 익히기 25",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Pre-Milled Abutment"],
+        "image": "./static/images/상부_25.jpg"
+    },
+    {
+        "id": "상부이름 익히기 26",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["ComOcta Milling Abutment"],
+        "image": "./static/images/상부_26.jpg"
+    },
+    {
+        "id": "상부이름 익히기 27",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Cement Abutment"],
+        "image": "./static/images/상부_27.jpg"
+    },
+    {
+        "id": "상부이름 익히기 28",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Angled Abutment"],
+        "image": "./static/images/상부_28.jpg"
+    },
+    {
+        "id": "상부이름 익히기 29",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Safe Abutment"],
+        "image": "./static/images/상부_29.jpg"
+    },
+    {
+        "id": "상부이름 익히기 30",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["UCLA NP-Cast Abutment"],
+        "image": "./static/images/상부_30.jpg"
+    },
+    {
+        "id": "상부이름 익히기 31",
+        "question_text": "Name?",
+        "answer_type": "short",
+        "correct_answers": ["Esthetic Abutment"],
+        "image": "./static/images/상부_31.jpg"
+    },
+    {
+      "id": "상부이름 익히기 32",
+      "question_text": "Name?",
+      "answer_type": "short",
+      "correct_answers": ["Esthetic-low Abutment"],
+      "image": "./static/images/상부_32.jpg"
+    },
+    {
+      "id": "상부이름 익히기 33",
+      "question_text": "Name?",
+      "answer_type": "short",
+      "correct_answers": ["Multi-Angled Abutment"],
+      "image": "./static/images/상부_33.jpg"
+    },
+    {
+      "id": "상부이름 익히기 34",
+      "question_text": "Name?",
+      "answer_type": "short",
+      "correct_answers": ["O-ring Abutment"],
+      "image": "./static/images/상부_34.jpg"
+    },
+    {
+      "id": "상부이름 익히기 35",
+      "question_text": "Name?",
+      "answer_type": "short",
+      "correct_answers": ["Locator Abutment"],
+      "image": "./static/images/상부_35.jpg"
+    },
+    {
+      "id": "상부이름 익히기 36",
+      "question_text": "Name?",
+      "answer_type": "short",
+      "correct_answers": ["Pre-Milled Abutment"],
+      "image": "./static/images/상부_36.jpg"
+    },
+    {
       "id": "투명 교정장치의 이해 1",
       "question_text": "잘 보이지 않는 플라스틱 소재의 맞춤형 교저장치를 순차적으로 작용하여 치아를 이동하는 교정치료 방법은?",
       "answer_type": "short",
